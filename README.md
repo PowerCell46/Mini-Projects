@@ -1,1 +1,1 @@
-# Mini-Console-Projects repository, containing all of my small projects written to be used on the command line.
+# Welcome to the 'Mini-Console-Projects' repository, a collection of my meticulously crafted small-scale applications tailored for seamless use within the command line environment. Explore an array of engaging projects, each thoughtfully designed to offer intuitive interactions and valuable functionalities. Join me on this journey of command line innovation and exploration.
