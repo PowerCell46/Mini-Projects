@@ -1,3 +1,1 @@
-# Tic-Tac-Toe-project
-Mini project of Tic-Tac-Toe written in Python in January 2022.
-Link to Replit: https://replit.com/@PowerCell46/Tic-Tac-Toe#main.py
+# Mini-Console-Projects repository, containing all of my small projects written to be used on the command line.
