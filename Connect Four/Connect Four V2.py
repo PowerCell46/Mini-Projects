@@ -215,12 +215,22 @@ def connect_four_game():
             if selected_column < 1 or selected_column > 7:
                 raise ValueError
 
+            def print_playing_field():
+                for row in playing_field:
+                    for el in row:
+                        if el == figures_dictionary["first_player"]:
+                            print(Fore.RED + el, end=" ")
+                        elif el == figures_dictionary["second_player"]:
+                            print(Fore.BLUE + el, end=" ")
+                        elif el == figures_dictionary["blank_space"]:
+                            print(Fore.RESET + el, end=" ")
+                    print()
+
             for index in range(5, -1, -1):
                 if playing_field[index][selected_column - 1] == figures_dictionary["blank_space"]:
                     time.sleep(1)
                     playing_field[index][selected_column - 1] = figures_dictionary["first_player"] if current_player_index % 2 == 0 else figures_dictionary["second_player"]
-                    for row in playing_field:
-                        print(" ".join(row))
+                    print_playing_field()
                     time.sleep(1.5)
                     print(f'Player 1 successfully put his symbol on position: row: {index + 1}, column: {selected_column}!' if current_player_index % 2 == 0 else f'Player 2 successfully put his symbol on position: row: {index + 1}, column: {selected_column}!')
                     break
@@ -229,8 +239,7 @@ def connect_four_game():
                 time.sleep(1)
                 print(Fore.YELLOW + f'The whole column is occupied!')
                 time.sleep(1.5)
-                for row in playing_field:
-                    print(" ".join(row))
+                print_playing_field()
                 time.sleep(1.5)
                 print(Fore.YELLOW + f'Choose a new column!')
                 current_player_index -= 1
@@ -278,4 +287,3 @@ while the_players_want_to_play:
         time.sleep(2.5)
         print(pyfiglet.figlet_format(f'Bye!', font="larry3d"))
         the_players_want_to_play = False
-    
