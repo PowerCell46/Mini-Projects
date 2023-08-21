@@ -10,18 +10,35 @@ first_player_points = 0
 second_player_points = 0
 the_players_want_to_play = True
 
-print(Fore.LIGHTGREEN_EX + (pyfiglet.figlet_format("Welcome", font="larry3d")))
-
-time.sleep(1)
-
-
-def connect_four_game(opponent_type):
-    figures_dictionary = {
+figures_dictionary = {
         "blank_space": "□",
         "first_player": "⚪",
         "second_player": "⚫"
     }
 
+print(Fore.LIGHTGREEN_EX + (pyfiglet.figlet_format("Welcome", font="larry3d")))
+
+time.sleep(1)
+
+
+def get_bot_move(playing_field):
+    prompt = f'We are playing Connect four. I have placed my disc. (I am playing with this symbol: {figures_dictionary["first_player"]} and you are playing with this symbol: {figures_dictionary["second_player"]}). This symbol: {figures_dictionary["blank_space"]} is an empty space. The current game state is: {playing_field}. Choose a column (greater than 0 and smaller than 8) and return a response in the format: "I choose column (your selected column).'
+    conversation_history = [
+        {"role": "user",
+         "content": prompt
+         }
+    ]
+
+    response = openai.ChatCompletion.create(
+        model="gpt-3.5-turbo",
+        messages=conversation_history
+    )
+
+    bot_move = response['choices'][0]['message']['content']
+    return bot_move
+
+
+def connect_four_game(opponent_type):
     playing_field = [[figures_dictionary["blank_space"] for el in range(7)] for row in range(6)]
 
     current_player_index = 0
@@ -210,26 +227,10 @@ def connect_four_game(opponent_type):
             return "Draw"
 
         try:
-            if current_player_index % 2 == 0:
+            if current_player_index % 2 == 0:  # First player's move
                 selected_column = int(input(Fore.RED + "Player 1, enter the column that you wish to select: (1) "))
 
-            else:
-                def get_bot_move(playing_field):
-                    prompt = f'We are playing Connect four. I have placed my disc (I am playing with this symbol{figures_dictionary["first_player"]} and you are playing with this symbol: {figures_dictionary["second_player"]}). This symbol: {figures_dictionary["blank_space"]} is an empty space. The current game state is: {playing_field}. Choose a column (greater than 0 and smaller than 8) and return a response in the format: "I choose column (your selected column).'
-                    conversation_history = [
-                        {"role": "user",
-                         "content": prompt
-                         }
-                    ]
-
-                    response = openai.ChatCompletion.create(
-                        model="gpt-3.5-turbo",
-                        messages=conversation_history
-                    )
-
-                    bot_move = response['choices'][0]['message']['content']
-                    return bot_move
-
+            else:  # Second player's move / Bot's move
                 if opponent_type == "with a bot":
                     while True:
                         current_response = get_bot_move(playing_field)
@@ -271,7 +272,7 @@ def connect_four_game(opponent_type):
                         if opponent_type == "with a player":
                             print(f'Player 2 successfully put his symbol on position: row: {index + 1}, column: {selected_column}!')
                         else:
-                            print(f'The Bot successfully put his symbol on position: row: {index + 1}, column: {selected_column}!')
+                            print(f'The Bot successfully put it\'s symbol on position: row: {index + 1}, column: {selected_column}!')
                     break
 
             else:
@@ -283,7 +284,7 @@ def connect_four_game(opponent_type):
                 print(Fore.YELLOW + f'Choose a new column!')
                 current_player_index -= 1
 
-        except ValueError:
+        except:
             time.sleep(1.5)
             print(Fore.YELLOW + f'You have entered an invalid position.')
             time.sleep(1.5)
@@ -304,8 +305,9 @@ def connect_four_game(opponent_type):
 
 
 while the_players_want_to_play:
-
+    time.sleep(1)
     opponent_type = input("Do you wish to play vs another Player or do you wish to play vs a Bot? (with a player/ with a bot) ").lower()
+
     if opponent_type != "with a player" and opponent_type != "with a bot":
         time.sleep(0.5)
         opponent_type = "with a bot"
