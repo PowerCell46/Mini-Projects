@@ -1,1 +1,5 @@
-# Welcome to the 'Mini-Console-Projects' repository, a collection of my meticulously crafted small-scale applications tailored for seamless use within the command line environment. Explore an array of engaging projects, each thoughtfully designed to offer intuitive interactions and valuable functionalities. Join me on this journey of command line innovation and exploration.
+# Mini-projects Repository
+This is a repository containing all of my small projects, most of them made to be used in the console, the others in the browser.
+## **Tic-Tac-Toe console project**
+## **Connect Four console project**
+## **Sudoku web project**
