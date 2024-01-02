@@ -502,16 +502,26 @@ header li div img {
     height: 9vh;
 }
 
-section {
-    display: flex;
-    flex-direction: row;
-}
 
 .main-satelite-view {
-    width: 65vw;
+    width: 70vw;
     border-radius: 0.5rem;
+}
+/* 
+.side-images img {
+    width: 18vw;
+} */
+section {
+    display: flex;
+}
+
+.side-images {
+    display: flex;
+    flex-direction: column;
+    margin-right: 2rem; 
 }
 
 .side-images img {
-    width: 18vw;
+    width: 12vw; 
+    margin-bottom: 3rem;
 }
