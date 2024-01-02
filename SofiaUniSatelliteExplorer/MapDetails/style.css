@@ -7,7 +7,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: url("https://i.pinimg.com/originals/96/1d/27/961d27ec840890c86fc3cde4824c95cb.jpg");
+    background: url("https://venngage-wordpress.s3.amazonaws.com/uploads/2018/09/Monochrome-Type-Simple-Background-Image.jpg");
     background-size: cover;
 }
 
@@ -506,6 +506,7 @@ header li div img {
 .main-satelite-view {
     width: 70vw;
     border-radius: 0.5rem;
+    margin-bottom: 7.5vh;
 }
 /* 
 .side-images img {
@@ -516,9 +517,11 @@ section {
 }
 
 .side-images {
+    border-radius: 0.5rem;
     display: flex;
     flex-direction: column;
     margin-right: 2rem; 
+    justify-content: center;
 }
 
 .side-images img {
