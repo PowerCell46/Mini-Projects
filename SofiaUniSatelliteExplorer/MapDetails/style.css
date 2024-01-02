@@ -528,3 +528,11 @@ section {
     width: 12vw; 
     margin-bottom: 3rem;
 }
+
+.side-images div {
+    background-color: #00c9a7;
+}
+
+.side-images div p {
+    color: whitesmoke;
+}
