@@ -9,6 +9,7 @@
     align-items: center;
     background: url("https://i.pinimg.com/originals/96/1d/27/961d27ec840890c86fc3cde4824c95cb.jpg");
     background-size: cover;
+    padding-bottom: 5vh;
 }
 
 
@@ -187,6 +188,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Salsa&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital@1&family=Salsa&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Square+Peg&display=swap');
 
 :root {
     --deep-blue: #145299;
@@ -509,8 +511,8 @@ header li div img {
  table {
     margin-top: 2vh;
     border-collapse: separate;
-    border-spacing: 20px;
-    width: 90%;
+    border-spacing: 22.5px;
+    width: 92%;
 }
 
 
@@ -524,15 +526,10 @@ tr {
 }
 
 
-tr:hover {
+tr:not(:first-child):hover {
     cursor: pointer;
     background-color: hsl(20, 95%, 65%);
     transform: translateY(-0.4rem);
-}
-
-
- table th {
-    padding: 1.2rem;
 }
 
 
@@ -540,7 +537,7 @@ tr:hover {
  table td {
     border-radius: 0.5rem;
     font-size: 1.3rem;
-    font-family: 'Salsa', cursive;
+    font-family: 'Square Peg', cursive;
     color: whitesmoke;
     font-weight: 100;
     letter-spacing: 0.07rem;
@@ -550,14 +547,10 @@ tr:hover {
 }
 
 table th {
+    padding: 1.5rem;
     font-size: 1.6rem;
-}
-
-
- table th {
     font-weight: 900;
 }
-
 
  table td img {
     width: 12.5vw;
