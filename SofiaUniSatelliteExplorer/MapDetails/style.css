@@ -18,8 +18,8 @@
     font-family: 'Permanent Marker', cursive;
     text-shadow: 5px 0px 7px rgba(0,0,0,0.68);
     letter-spacing: 0.8rem;
-    margin-top: 3vh;
-    margin-bottom: 2vh;
+    margin-top: 2vh;
+    margin-bottom: 4vh;
 }
 
 
@@ -508,10 +508,8 @@ header li div img {
     border-radius: 0.5rem;
     margin-bottom: 7.5vh;
 }
-/* 
-.side-images img {
-    width: 18vw;
-} */
+
+
 section {
     display: flex;
 }
@@ -528,11 +526,24 @@ section {
     width: 12vw; 
     margin-bottom: 3rem;
 }
+.side-images div {
+    transition: 600ms ease-in-out;
+}
+
+.side-images div:hover {
+    transform: translateY(-0.3rem);    
+}
 
 .side-images div {
-    background-color: #00c9a7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .side-images div p {
+    font-family: 'Permanent Marker', cursive;
     color: whitesmoke;
+    position: relative;
+    bottom: 6.5vh;
 }
