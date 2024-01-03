@@ -113,10 +113,10 @@ html {
 
 
 @keyframes hithere {
-    30% { transform: scale(1.15); }
-    40%, 60% { transform: rotate(-5deg) scale(1.15); }
-    50% { transform: rotate(5deg) scale(1.15); }
-    70% { transform: rotate(0deg) scale(1.15); }
+    30% { transform: scale(1.05); }
+    40%, 60% { transform: rotate(-3deg) scale(1.05); }
+    50% { transform: rotate(3deg) scale(1.05); }
+    70% { transform: rotate(0deg) scale(1.05); }
     100% { transform: scale(1); }
 }
 
@@ -317,6 +317,7 @@ table th {
     height: auto;
     width: 50vw;
     border-radius: 1rem;
+    animation: hithere 10s ease-in-out infinite;
     transition: 600ms ease-in-out;
 }
 
