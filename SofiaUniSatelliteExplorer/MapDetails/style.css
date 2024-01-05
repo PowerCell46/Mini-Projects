@@ -1,4 +1,53 @@
-.post-product-main {
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Salsa&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital@1&family=Salsa&display=swap');
+
+
+:root {
+    --deep-blue: #145299;
+    --dark-blue: #0e3a6c;
+    --deep-blue-darker: #124b8b;
+    --carrot-orange: #ff5500;
+    --cool-orange: #ff5700;
+    --blood-red: #820303;
+}
+
+
+html {
+  font-size: 20px;
+  background-color: var(--deep-blue);
+} 
+
+
+@keyframes float {
+  0% {
+      transform: translatey(0px);
+  }
+  50% {
+      transform: translatey(-0.2rem);
+  }
+  100% {
+      transform: translatey(0px);
+  }
+}
+
+
+@keyframes hithere {
+    30% { transform: scale(1.15); }
+    40%, 60% { transform: rotate(-5deg) scale(1.15); }
+    50% { transform: rotate(5deg) scale(1.15); }
+    70% { transform: rotate(0deg) scale(1.15); }
+    100% { transform: scale(1); }
+}
+
+
+@keyframes pulse {
+    from { transform: scale(0.8); }
+    to { transform: scale(1.2); }
+}
+
+
+.satelite-view-description {
     width: 100.1vw;
     margin: auto auto;
     margin-left: -0.4vw;
@@ -7,12 +56,12 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: url("https://venngage-wordpress.s3.amazonaws.com/uploads/2018/09/Monochrome-Type-Simple-Background-Image.jpg");
+    background: url("https://i.pinimg.com/originals/af/0f/c4/af0fc46fa7f05330435e9e71779af666.jpg");
     background-size: cover;
 }
 
 
-.post-product-main h1 {
+.satelite-view-description h1 {
     color: whitesmoke;
     font-size: 4rem;
     font-family: 'Permanent Marker', cursive;
@@ -23,14 +72,14 @@
 }
 
 
-.post-product-main form {
+.satelite-view-description form {
     display: flex;
     flex-direction: column;
     gap: 2rem;
 }
 
 
-.post-product-main form input {
+.satelite-view-description form input {
     padding: 1.2rem 1.2rem 1.2rem 1.2rem;
     border-radius: 5px;
     font-size: 1.2rem;
@@ -39,21 +88,21 @@
 }
 
 
-.post-product-main form input::placeholder {
+.satelite-view-description form input::placeholder {
     font-size: 1.2rem;
     font-family: 'Salsa', cursive;
     color: grey;
 }
 
 
-.post-product-main form div {
+.satelite-view-description form div {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 
-.post-product-main form div label {
+.satelite-view-description form div label {
     color: whitesmoke;
     font-family: 'Salsa', cursive;
     text-shadow: 5px 0px 7px rgba(0,0,0,0.68);
@@ -64,7 +113,7 @@
 }
 
 
-.post-product-main form div select {
+.satelite-view-description form div select {
     padding: 1rem 1rem 1rem 1rem;
     border-radius: 5px;
     font-size: 1.2rem;
@@ -75,15 +124,14 @@
 }
 
 
-
-.post-product-main button:hover {
+.satelite-view-description button:hover {
     background-color: #124b8b;
     color: #d6d6d6;;
     /* transform: translateY(-0.2rem); */
 }
 
 
-.post-product-main .file-upload-div button {
+.satelite-view-description .file-upload-div button {
     text-align: center;
     width: 45%;
     padding: 0.7rem 1.5rem;
@@ -91,13 +139,14 @@
     animation: none;
 }
 
-.post-product-main .file-upload-div button:hover {
+
+.satelite-view-description .file-upload-div button:hover {
     background-color: #009578;
     transform: translateY(-0.2rem);
 }
 
 
-.post-product-main .file-upload-div {
+.satelite-view-description .file-upload-div {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -106,7 +155,7 @@
 }
 
 
-.post-product-main .file-upload-div span {
+.satelite-view-description .file-upload-div span {
     font-size: 1.2rem;
     font-family: 'Salsa', cursive;
     color: whitesmoke;
@@ -114,25 +163,6 @@
     border-radius: 0.2rem;
 }
 
-
-.post-product-main .err-input-field {
-    border: 4px solid rgb(130, 3, 3);
-}
-
-
-.post-product-main .err-message { /* In case of an error  + main height + footer margin-top*/
-    font-family: 'Salsa';
-    font-size: 1rem;
-    font-weight: 600;
-    letter-spacing: 0.07rem;
-    color: rgb(130, 3, 3);
-    margin-bottom: -2vh;
-    margin-top: -0.5vh;
-    padding: 0.5rem 0.5rem;
-    border-radius: 10px;
-    background-color: rgba(138, 169, 205, 0.8); 
-    display: none; 
-}
 
 
 @media screen and (min-width: 2501px) { 
@@ -164,141 +194,6 @@
 }
 
 
-
-
-@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Salsa&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital@1&family=Salsa&display=swap');
-
-:root {
-    --deep-blue: #145299;
-    --dark-blue: #0e3a6c;
-    --deep-blue-darker: #124b8b;
-    --carrot-orange: #ff5500;
-    --cool-orange: #ff5700;
-    --blood-red: #820303;
-}
-
-
-html {
-  font-size: 20px;
-  background-color: var(--deep-blue);
-} 
-
-
-@keyframes bgPositionAnim {
-  0% {
-      background-position: center calc(100%);
-  }
-  100% {
-      background-position: center;
-  }
-}
-
-
-@keyframes float {
-  0% {
-      transform: translatey(0px);
-  }
-  50% {
-      transform: translatey(-0.2rem);
-  }
-  100% {
-      transform: translatey(0px);
-  }
-}
-
-
-@keyframes bounceInLeft {
-  0%,60%,75%,90%,to {
-      -webkit-animation-timing-function: cubic-bezier(.215,.61,.355,1);
-      animation-timing-function: cubic-bezier(.215,.61,.355,1)
-  }
-
-  0% {
-      opacity: 0;
-      -webkit-transform: translate3d(-3000px,0,0);
-      transform: translate3d(-3000px,0,0)
-  }
-
-  60% {
-      opacity: 1;
-      -webkit-transform: translate3d(25px,0,0);
-      transform: translate3d(25px,0,0)
-  }
-
-  75% {
-      -webkit-transform: translate3d(-10px,0,0);
-      transform: translate3d(-10px,0,0)
-  }
-
-  90% {
-      -webkit-transform: translate3d(5px,0,0);
-      transform: translate3d(5px,0,0)
-  }
-
-  to {
-      -webkit-transform: translateZ(0);
-      transform: translateZ(0)
-  }
-}
-
-
-@keyframes bounceInRight {
-  0%,60%,75%,90%,to {
-      -webkit-animation-timing-function: cubic-bezier(.215,.61,.355,1);
-      animation-timing-function: cubic-bezier(.215,.61,.355,1)
-  }
-
-  0% {
-      opacity: 0;
-      -webkit-transform: translate3d(3000px,0,0);
-      transform: translate3d(3000px,0,0)
-  }
-
-  60% {
-      opacity: 1;
-      -webkit-transform: translate3d(-25px,0,0);
-      transform: translate3d(-25px,0,0)
-  }
-
-  75% {
-      -webkit-transform: translate3d(10px,0,0);
-      transform: translate3d(10px,0,0)
-  }
-
-  90% {
-      -webkit-transform: translate3d(-5px,0,0);
-      transform: translate3d(-5px,0,0)
-  }
-
-  to {
-      -webkit-transform: translateZ(0);
-      transform: translateZ(0)
-  }
-}
-
-
-@keyframes hithere {
-    30% { transform: scale(1.15); }
-    40%, 60% { transform: rotate(-5deg) scale(1.15); }
-    50% { transform: rotate(5deg) scale(1.15); }
-    70% { transform: rotate(0deg) scale(1.15); }
-    100% { transform: scale(1); }
-}
-
-
-@keyframes flash {
-    from { opacity: 1; }	
-    to { opacity: 0.2; }
-}
-
-@keyframes pulse {
-    from { transform: scale(0.8); }
-    to { transform: scale(1.2); }
-}
-
-
 @media screen and (min-width: 2501px) { 
     html {
         font-size: 22.5px;
@@ -311,7 +206,6 @@ html {
         font-size: 15px;
     }
 }
-
 
 
 header {
@@ -372,6 +266,7 @@ header li a:hover:before {
     width: 100%;
 }
 
+
 header li div img {
     border-radius: 10%;
     height: 5vh;
@@ -385,90 +280,6 @@ header li div img {
 }
 
 
-.hidden-profile-view {
-    width: 10vw;
-    margin-left: -4.5vw; 
-    padding-right: 1.5vw;
-    display: none;
-    position: absolute;
-    text-align: center;
-    background-color: rgba(20, 83, 154, 0.5);
-    box-shadow: 0px 0px 25px 4px rgba(0, 0, 0, 0.75);
-    border-radius: 0.35rem;
-    transition: 400ms ease-in-out;
-}
-
-
-.hidden-profile-view li a::before {
-    background: none;
-}
-
-
-.hidden-profile-view:hover {
-    transition: 600ms ease-in-out;
-    background-color: rgba(20, 83, 154, 0.80);
-}
-
-
-.hidden-profile-view li {
-    margin-top: 1.7vh;
-    display: inline-block;
-}
-
-
-.img-to-my-profile-link:hover:before {
-    width: 0;
-}
-
-
-#not-aministrator-div {
-    display: flex;
-}
-
-
-#shopping-cart {
-    margin-left: 2rem;
-    font-size: 1.5rem;
-    position: relative;
-    top: 0.6rem;
-}
-
-
-#shopping-cart-quantity {
-    font-size: 1rem;
-    position: relative;
-    bottom: 1.2rem;
-    background-color: #ff5700;
-    border: 2px solid #ff5700;
-    border-radius: 10px;
-    padding: 0.1rem 0.3rem;
-}
-
-
-.not-aministrator-div li a::before {
-    background: none;
-}
-
-
-#cart-div {
-    margin-left: -15vw;
-    display: flex;
-    position: relative;
-    left: 2.5vw;
-    text-decoration: none;
-
-}
-
-
-#cart-div #shopping-cart-quantity-link:hover {
-    text-decoration: none;
-}
-
-
-#cart-div a:hover:before {
-    width: 0;
-}
-
 
 @media screen and (min-width: 2501px) { 
     #cart-div {
@@ -479,6 +290,7 @@ header li div img {
         text-decoration: none;
     }    
 }
+
 
 #sofia-uni-logo {
     height: 9vh;
@@ -496,6 +308,7 @@ section {
     display: flex;
 }
 
+
 .side-images {
     border-radius: 0.5rem;
     display: flex;
@@ -504,17 +317,22 @@ section {
     justify-content: center;
 }
 
+
 .side-images img {
     width: 12vw; 
     margin-bottom: 3rem;
 }
+
+
 .side-images div {
     transition: 600ms ease-in-out;
 }
 
+
 .side-images div:hover {
     transform: translateY(-0.3rem);    
 }
+
 
 .side-images div {
     display: flex;
@@ -523,9 +341,28 @@ section {
     align-items: center;
 }
 
+
 .side-images div p {
     font-family: 'Permanent Marker', cursive;
     color: whitesmoke;
     position: relative;
     bottom: 6.5vh;
+}
+
+
+#link-to-source {
+    margin-top: -3vh;
+    color: whitesmoke;
+    text-align: center;
+    font-size: 2.5rem;
+    text-decoration: none;
+    font-family: 'Permanent Marker', cursive;
+    padding-bottom: 5vh;
+    transition: 600ms ease-in-out;
+}
+
+
+#link-to-source:hover {
+    text-decoration: underline;
+    color: rgb(216, 212, 212);
 }
