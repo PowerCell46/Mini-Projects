@@ -1,189 +1,3 @@
-.post-product-main {
-    width: 100.1vw;
-    height: 130vh;
-    margin: auto auto;
-    margin-left: -0.4vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background: url("https://media0.giphy.com/media/l5JbspfwZ0yjHjlJ0K/giphy-downsized-large.gif?cid=6c09b95237qoh2fyvkzlctks1b1rii8gxr1nbinvxp4k06q1&ep=v1_internal_gif_by_id&rid=giphy-downsized-large.gif&ct=g");
-    background-size: cover;
-}
-
-
-.post-product-main h1 {
-    color: whitesmoke;
-    font-size: 4rem;
-    font-family: 'Permanent Marker', cursive;
-    text-shadow: 5px 0px 7px rgba(0,0,0,0.68);
-    letter-spacing: 0.8rem;
-    margin-top: 12.5vh;
-    margin-bottom: 4vh;
-}
-
-
-.post-product-main form {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-}
-
-
-.post-product-main form input {
-    padding: 1.2rem 1.2rem 1.2rem 1.2rem;
-    border-radius: 5px;
-    font-size: 1.2rem;
-    color: black;
-    border: none;
-}
-
-
-.post-product-main form input::placeholder {
-    font-size: 1.2rem;
-    font-family: 'Salsa', cursive;
-    color: grey;
-}
-
-
-.post-product-main form div {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-
-.post-product-main form div label {
-    color: whitesmoke;
-    font-family: 'Salsa', cursive;
-    text-shadow: 5px 0px 7px rgba(0,0,0,0.68);
-    font-size: 1.6rem;
-    margin-right: 0.7em;
-    letter-spacing: 0.08rem;
-    font-weight: 600;
-}
-
-
-.post-product-main form div select {
-    padding: 1rem 1rem 1rem 1rem;
-    border-radius: 5px;
-    font-size: 1.2rem;
-    font-family: 'Salsa', cursive;
-    color: grey;
-    border: none;
-    cursor: pointer;
-}
-
-
-.post-product-main form button {
-    align-self: center;
-    width: 60%;
-    padding: 1.2rem;
-    background-color: var(--deep-blue);
-    color: #f5f5f5;
-    font-size: 1.2rem;
-    text-shadow: 5px 0px 7px rgba(0,0,0,0.68);
-    font-family: 'Salsa', cursive;
-    font-weight: 600;
-    letter-spacing: 0.15rem;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 600ms ease-in-out;
-    animation: hithere 5s ease-in-out infinite;
-}
-
-
-.post-product-main button:hover {
-    background-color: #124b8b;
-    color: #d6d6d6;;
-    /* transform: translateY(-0.2rem); */
-}
-
-
-.post-product-main .file-upload-div button {
-    text-align: center;
-    width: 45%;
-    padding: 0.7rem 1.5rem;
-    background-color: #00866c;
-    animation: none;
-}
-
-.post-product-main .file-upload-div button:hover {
-    background-color: #009578;
-    transform: translateY(-0.2rem);
-}
-
-
-.post-product-main .file-upload-div {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 2vw;
-    margin-bottom: 2vh;
-}
-
-
-.post-product-main .file-upload-div span {
-    font-size: 1.2rem;
-    font-family: 'Salsa', cursive;
-    color: whitesmoke;
-    padding: 0.5rem;
-    border-radius: 0.2rem;
-}
-
-
-.post-product-main .err-input-field {
-    border: 4px solid rgb(130, 3, 3);
-}
-
-
-.post-product-main .err-message { /* In case of an error  + main height + footer margin-top*/
-    font-family: 'Salsa';
-    font-size: 1rem;
-    font-weight: 600;
-    letter-spacing: 0.07rem;
-    color: rgb(130, 3, 3);
-    margin-bottom: -2vh;
-    margin-top: -0.5vh;
-    padding: 0.5rem 0.5rem;
-    border-radius: 10px;
-    background-color: rgba(138, 169, 205, 0.8); 
-    display: none; 
-}
-
-
-@media screen and (min-width: 2501px) { 
-    .post-product-main form  {
-        gap: 2.4rem;
-    }
-}
-
-
-@media screen and (max-width: 1900px) {
-    .post-product-main {
-        margin-left: -0.5vw;
-    }
-
-
-    .post-product-main h1 {
-        margin-top: 15vh;
-    }
-
-
-    .post-product-main {
-        padding-bottom: 12.5vh;
-    }
-
-
-    .post-product-main .err-input-field {
-        border: 3px solid rgb(130, 3, 3);
-    }
-}
-
-
-
-
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Salsa&display=swap');
 
@@ -204,13 +18,235 @@ html {
 } 
 
 
-@keyframes bgPositionAnim {
-  0% {
-      background-position: center calc(100%);
-  }
-  100% {
-      background-position: center;
-  }
+.create-satelite-image {
+    width: 100.1vw;
+    height: 145vh;
+    margin: auto auto;
+    margin-left: -0.4vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url("https://pixelz.cc/wp-content/uploads/2017/11/earth-from-space-uhd-4k-wallpaper.jpg");
+    background-size: cover;
+}
+
+
+.create-satelite-image h1 {
+    color: whitesmoke;
+    font-size: 4rem;
+    font-family: 'Permanent Marker', cursive;
+    text-shadow: 5px 0px 7px rgba(0,0,0,0.68);
+    letter-spacing: 0.8rem;
+    margin-top: 5vh;
+    margin-bottom: 4vh;
+}
+
+
+.create-satelite-image form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+
+.create-satelite-image form input {
+    padding: 1.2rem 1.2rem 1.2rem 1.2rem;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    color: black;
+    border: none;
+}
+
+
+.create-satelite-image form input::placeholder {
+    font-size: 1.2rem;
+    font-family: 'Salsa', cursive;
+    color: grey;
+}
+
+
+.create-satelite-image form div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.create-satelite-image form div label {
+    color: whitesmoke;
+    font-family: 'Salsa', cursive;
+    text-shadow: 5px 0px 7px rgba(0,0,0,0.68);
+    font-size: 1.6rem;
+    margin-right: 0.7em;
+    letter-spacing: 0.08rem;
+    font-weight: 600;
+}
+
+
+.create-satelite-image form div select {
+    padding: 1rem 1rem 1rem 1rem;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    font-family: 'Salsa', cursive;
+    color: grey;
+    border: none;
+    cursor: pointer;
+}
+
+
+.create-satelite-image form button {
+    align-self: center;
+    width: 60%;
+    padding: 1.2rem;
+    background-color: var(--deep-blue);
+    color: #f5f5f5;
+    font-size: 1.2rem;
+    text-shadow: 5px 0px 7px rgba(0,0,0,0.68);
+    font-family: 'Salsa', cursive;
+    font-weight: 600;
+    letter-spacing: 0.15rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 600ms ease-in-out;
+    animation: hithere 5s ease-in-out infinite;
+}
+
+
+.create-satelite-image button:hover {
+    background-color: #124b8b;
+    color: #d6d6d6;;
+}
+
+
+.create-satelite-image .file-upload-div button {
+    text-align: center;
+    width: 45%;
+    padding: 0.7rem 1.5rem;
+    background-color: #00866c;
+    animation: none;
+}
+
+
+input[type=file]::file-selector-button {
+    align-self: center;
+    width: 50%;
+    padding: 1.2rem;
+    color: #f5f5f5;
+    font-size: 1.2rem;
+    text-shadow: 5px 0px 7px rgba(0,0,0,0.68);
+    font-family: 'Salsa', cursive;
+    font-weight: 600;
+    letter-spacing: 0.15rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 600ms ease-in-out;
+    animation: hithere 5s ease-in-out infinite;
+    text-align: center;
+    background-color: #00866c;
+    animation: none;
+    border: none;
+    margin-right: 1rem;
+}
+
+
+input[type=file]::file-selector-button:hover {
+    background: #007961;
+}
+
+.file-upload-label {
+    text-align: center;
+    font-size: 1.7rem;
+    text-shadow: 5px 0px 7px rgba(0,0,0,0.68);
+    font-family: 'Salsa', cursive;
+    letter-spacing: 0.15rem;
+    display: inline-block;
+    padding: 1rem;
+    color: whitesmoke;
+    margin-top: -2vh;
+    margin-bottom: -4.5vh;
+}
+
+.file-upload {
+    background-color: rgba(255, 255, 255, 0.2);
+    transition: 600ms ease-in-out;
+}
+
+.file-upload:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.create-satelite-image .file-upload-div button:hover {
+    background-color: #009578;
+    transform: translateY(-0.2rem);
+}
+
+
+.create-satelite-image .file-upload-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2vw;
+    margin-bottom: 2vh;
+}
+
+
+.create-satelite-image .file-upload-div span {
+    font-size: 1.2rem;
+    font-family: 'Salsa', cursive;
+    color: whitesmoke;
+    padding: 0.5rem;
+    border-radius: 0.2rem;
+}
+
+
+.create-satelite-image .err-input-field {
+    border: 4px solid rgb(130, 3, 3);
+}
+
+
+.create-satelite-image .err-message { /* In case of an error  + main height + footer margin-top*/
+    font-family: 'Salsa';
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.07rem;
+    color: rgb(130, 3, 3);
+    margin-bottom: -2vh;
+    margin-top: -0.5vh;
+    padding: 0.5rem 0.5rem;
+    border-radius: 10px;
+    background-color: rgba(138, 169, 205, 0.8); 
+    display: none; 
+}
+
+
+@media screen and (min-width: 2501px) { 
+    .create-satelite-image form  {
+        gap: 2.4rem;
+    }
+}
+
+
+@media screen and (max-width: 1900px) {
+    .create-satelite-image {
+        margin-left: -0.5vw;
+    }
+
+
+    .create-satelite-image h1 {
+        margin-top: 15vh;
+    }
+
+
+    .create-satelite-image {
+        padding-bottom: 12.5vh;
+    }
+
+
+    .create-satelite-image .err-input-field {
+        border: 3px solid rgb(130, 3, 3);
+    }
 }
 
 
@@ -227,76 +263,6 @@ html {
 }
 
 
-@keyframes bounceInLeft {
-  0%,60%,75%,90%,to {
-      -webkit-animation-timing-function: cubic-bezier(.215,.61,.355,1);
-      animation-timing-function: cubic-bezier(.215,.61,.355,1)
-  }
-
-  0% {
-      opacity: 0;
-      -webkit-transform: translate3d(-3000px,0,0);
-      transform: translate3d(-3000px,0,0)
-  }
-
-  60% {
-      opacity: 1;
-      -webkit-transform: translate3d(25px,0,0);
-      transform: translate3d(25px,0,0)
-  }
-
-  75% {
-      -webkit-transform: translate3d(-10px,0,0);
-      transform: translate3d(-10px,0,0)
-  }
-
-  90% {
-      -webkit-transform: translate3d(5px,0,0);
-      transform: translate3d(5px,0,0)
-  }
-
-  to {
-      -webkit-transform: translateZ(0);
-      transform: translateZ(0)
-  }
-}
-
-
-@keyframes bounceInRight {
-  0%,60%,75%,90%,to {
-      -webkit-animation-timing-function: cubic-bezier(.215,.61,.355,1);
-      animation-timing-function: cubic-bezier(.215,.61,.355,1)
-  }
-
-  0% {
-      opacity: 0;
-      -webkit-transform: translate3d(3000px,0,0);
-      transform: translate3d(3000px,0,0)
-  }
-
-  60% {
-      opacity: 1;
-      -webkit-transform: translate3d(-25px,0,0);
-      transform: translate3d(-25px,0,0)
-  }
-
-  75% {
-      -webkit-transform: translate3d(10px,0,0);
-      transform: translate3d(10px,0,0)
-  }
-
-  90% {
-      -webkit-transform: translate3d(-5px,0,0);
-      transform: translate3d(-5px,0,0)
-  }
-
-  to {
-      -webkit-transform: translateZ(0);
-      transform: translateZ(0)
-  }
-}
-
-
 @keyframes hithere {
     30% { transform: scale(1.15); }
     40%, 60% { transform: rotate(-5deg) scale(1.15); }
@@ -305,11 +271,6 @@ html {
     100% { transform: scale(1); }
 }
 
-
-@keyframes flash {
-    from { opacity: 1; }	
-    to { opacity: 0.2; }
-}
 
 @keyframes pulse {
     from { transform: scale(0.8); }
@@ -329,7 +290,6 @@ html {
         font-size: 15px;
     }
 }
-
 
 
 header {
@@ -390,101 +350,11 @@ header li a:hover:before {
     width: 100%;
 }
 
+
 header li div img {
     border-radius: 10%;
     height: 5vh;
     width: calc(5vh * 1.02);
-}
-
-
-.profile-dropdown {
-    position: relative;
-    display: inline-block;
-}
-
-
-.hidden-profile-view {
-    width: 10vw;
-    margin-left: -4.5vw; 
-    padding-right: 1.5vw;
-    display: none;
-    position: absolute;
-    text-align: center;
-    background-color: rgba(20, 83, 154, 0.5);
-    box-shadow: 0px 0px 25px 4px rgba(0, 0, 0, 0.75);
-    border-radius: 0.35rem;
-    transition: 400ms ease-in-out;
-}
-
-
-.hidden-profile-view li a::before {
-    background: none;
-}
-
-
-.hidden-profile-view:hover {
-    transition: 600ms ease-in-out;
-    background-color: rgba(20, 83, 154, 0.80);
-}
-
-
-.hidden-profile-view li {
-    margin-top: 1.7vh;
-    display: inline-block;
-}
-
-
-.img-to-my-profile-link:hover:before {
-    width: 0;
-}
-
-
-#not-aministrator-div {
-    display: flex;
-}
-
-
-#shopping-cart {
-    margin-left: 2rem;
-    font-size: 1.5rem;
-    position: relative;
-    top: 0.6rem;
-}
-
-
-#shopping-cart-quantity {
-    font-size: 1rem;
-    position: relative;
-    bottom: 1.2rem;
-    background-color: #ff5700;
-    border: 2px solid #ff5700;
-    border-radius: 10px;
-    padding: 0.1rem 0.3rem;
-}
-
-
-.not-aministrator-div li a::before {
-    background: none;
-}
-
-
-#cart-div {
-    margin-left: -15vw;
-    display: flex;
-    position: relative;
-    left: 2.5vw;
-    text-decoration: none;
-
-}
-
-
-#cart-div #shopping-cart-quantity-link:hover {
-    text-decoration: none;
-}
-
-
-#cart-div a:hover:before {
-    width: 0;
 }
 
 
@@ -497,6 +367,7 @@ header li div img {
         text-decoration: none;
     }    
 }
+
 
 #sofia-uni-logo {
     height: 9vh;

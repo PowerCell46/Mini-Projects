@@ -17,9 +17,10 @@
 
      </header>
 
-    <main class="post-product-main">
+    <main class="create-satelite-image">
         <h1>Post Satelite Imagery</h1>
-        <form>
+        
+        <form method="post" action="">
            
             <input type="text" placeholder="Teritory" name="name"/>    
 
@@ -34,29 +35,18 @@
                 </select>
             </div>
            
-            <input type="file" name="image" class="file-upload" hidden="hidden"/>
-            <p id="post-product-image-err-p" class="err-message">Invalid File Type!</p>
-            <div class="file-upload-div">
-                <button id="post-product-image">True Colour Image</button>
-                <span>No file chosen</span>
-            </div>
+            <label for="ndvi-image" class="file-upload-label">True Colour Image</label>
+            <input type="file" name="true-colour-image" class="file-upload" />
 
-            <input type="file" name="image" class="file-upload" hidden="hidden"/>
-            <p id="post-product-image-err-p" class="err-message">Invalid File Type!</p>
-            <div class="file-upload-div">
-                <button id="post-product-image">False Colour Image</button>
-                <span>No file chosen</span>
-            </div>
+            <label for="ndvi-image" class="file-upload-label">False Colour Image</label>
+            <input type="file" name="false-colour-image" class="file-upload"/>
 
-            <input type="file" name="image" class="file-upload" hidden="hidden"/>
-            <p id="post-product-image-err-p" class="err-message">Invalid File Type!</p>
-            <div class="file-upload-div">
-                <button id="post-product-image">Thermal Image</button>
-                <span>No file chosen</span>
-            </div>
+            <label for="ndvi-image" class="file-upload-label">NDVI Image</label>
+            <input type="file" name="ndvi-image" class="file-upload"/>
           
             <input type="date" id="start" name="trip-start" value="2023-07-22" min="2000-01-01" max="2024-01-31" />
-            <button>Upload </button>
+            
+            <button>Upload</button>
         </form>
     </main>
 </body>
