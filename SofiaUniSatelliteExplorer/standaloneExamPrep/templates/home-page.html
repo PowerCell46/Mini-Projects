@@ -1,13 +1,66 @@
 {% extends 'base.html' %}
+{% load static %}
 
 {% block content %}
 
-        <section id="index-headline">
-            <div class="index-message">
-                <h2>When there is plant</h2>
-                <h3>there is live</h3>
-                <h4>Join us now!</h4>
-            </div>
-        </section>
+        <main class="home-page-main">
+        <h1>Sofia Uni Satellite Explorer</h1>
+
+        <div id="starting-div">
+            <img src="https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c2F0ZWxsaXRlfGVufDB8fDB8fHww" alt="">
+            <h5 id="sofia-uni-description"><b>Sofia Uni Satellite Explorer</b> is a project developed by <b>Peter Gerdzhikov</b> as part of a coursework for the specialty of <b>Application of Remote Sensing Data and Information</b>. <br> This platform offers a user-friendly interface allowing individuals to contribute satellite images enhanced with various spectral indexes. The main page serves as a dynamic showcase, providing users with a visual overview of the added satellite imagery.</h5>
+
+        <h5 id="sofia-uni-description">
+            <br> <b>Key Features:</b>
+
+            <br> <b>1. User Contribution:</b> The platform allows users to contribute satellite images enriched with diverse spectral indexes, fostering collaborative exploration and analysis.
+
+            <br> <b>2. Interactive Visualization:</b> Satellite imagery is prominently displayed on the main page, offering an interactive and visually engaging experience for users to explore the Earth's surface.
+
+            <br> <b>3. Detailed Analysis:</b> Each satellite image can be examined in detail through a dedicated view, providing options to download the image and manipulate spectral indexes for in-depth analysis.
+
+            <br> <b>4. Spectral Index Customization:</b> Users have the flexibility to alter spectral indexes, enhancing the utility of the satellite imagery for a variety of applications.
+        </h5>
+        </div>
+
+        <table>
+            <tr>
+                <th>Date</th>
+                <th>Teritory</th>
+                <th>Image</th>
+            </tr>
+            <tr>
+                <td>2023-12-29</td>
+                <td>Sofia, Bulgaria</td>
+                <td><img src="{% static 'images/2023-12-29-00_00_2023-12-29-23_59_Landsat_8-9_L1_True_color.jpg' %}" alt="Sofia, Bulgaria 2023-12-29"></td>
+            </tr>
+            <tr>
+                <td>2023-12-29</td>
+                <td>Sofia, Bulgaria</td>
+                <td><img src="{% static 'images/2023-12-29-00_00_2023-12-29-23_59_Landsat_8-9_L1_True_color.jpg' %}" alt="Sofia, Bulgaria 2023-12-29"></td>
+            </tr>
+            <tr>
+                <td>2023-12-29</td>
+                <td>Sofia, Bulgaria</td>
+                <td><img src="{% static 'images/2023-12-29-00_00_2023-12-29-23_59_Landsat_8-9_L1_True_color.jpg' %}" alt="Sofia, Bulgaria 2023-12-29"></td>
+            </tr>
+            <tr>
+                <td>2023-12-29</td>
+                <td>Sofia, Bulgaria</td>
+                <td><img src="{% static 'images/2023-12-29-00_00_2023-12-29-23_59_Landsat_8-9_L1_True_color.jpg' %}" alt="Sofia, Bulgaria 2023-12-29"></td>
+            </tr>
+            <tr>
+                <td>2023-12-29</td>
+                <td>Sofia, Bulgaria</td>
+                <td><img src="{% static 'images/2023-12-29-00_00_2023-12-29-23_59_Landsat_8-9_L1_True_color.jpg' %}" alt="Sofia, Bulgaria 2023-12-29"></td>
+            </tr>
+            <tr>
+                <td>2023-12-29</td>
+                <td>Sofia, Bulgaria</td>
+                <td><img src="{% static 'images/2023-12-29-00_00_2023-12-29-23_59_Landsat_8-9_L1_True_color.jpg' %}" alt="Sofia, Bulgaria 2023-12-29"></td>
+            </tr>
+        </table>
+
+    </main>
 
 {% endblock %}

@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+{% block content %}
+     <main class="create-satelite-image">
+        <h1>Post Satelite Imagery</h1>
+
+        <form method="post" action="">
+
+            <input type="text" placeholder="Territory" name="territory"/>
+
+            <input type="text" placeholder="Source URL" name="sourceUrl"/>
+
+            <div class="productTypeContainer">
+                    <label htmlFor="productType">Data Source:</label>
+                <select name="productType">
+                    <option value="fitnessMachine">Sentinel-2</option>
+                    <option value="foodSupplement">Landsat 8-9</option>
+                    <option value="merchandise">Copernicus Services</option>
+                </select>
+            </div>
+
+            <label for="ndvi-image" class="file-upload-label">True Colour Image</label>
+            <input type="file" name="true-colour-image" class="file-upload" />
+
+            <label for="ndvi-image" class="file-upload-label">False Colour Image</label>
+            <input type="file" name="false-colour-image" class="file-upload"/>
+
+            <label for="ndvi-image" class="file-upload-label">NDVI Image</label>
+            <input type="file" name="ndvi-image" class="file-upload"/>
+
+            <input type="date" id="start" name="trip-start" value="2023-07-22" min="2000-01-01" max="2024-01-31" />
+
+            <button>Upload</button>
+        </form>
+    </main>
+
+{% endblock %}

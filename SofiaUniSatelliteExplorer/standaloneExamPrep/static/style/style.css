@@ -465,7 +465,7 @@ table td img {
 /* Satellite Description */
 
 
-.satelite-view-description {
+.satellite-view-description {
     width: 100.1vw;
     margin: auto auto;
     margin-left: -0.4vw;
@@ -479,7 +479,7 @@ table td img {
 }
 
 
-.satelite-view-description h1 {
+.satellite-view-description h1 {
     color: whitesmoke;
     font-size: 4rem;
     font-family: 'Permanent Marker', cursive;
@@ -490,14 +490,14 @@ table td img {
 }
 
 
-.satelite-view-description form {
+.satellite-view-description form {
     display: flex;
     flex-direction: column;
     gap: 2rem;
 }
 
 
-.satelite-view-description form input {
+.satellite-view-description form input {
     padding: 1.2rem 1.2rem 1.2rem 1.2rem;
     border-radius: 5px;
     font-size: 1.2rem;
@@ -506,21 +506,21 @@ table td img {
 }
 
 
-.satelite-view-description form input::placeholder {
+.satellite-view-description form input::placeholder {
     font-size: 1.2rem;
     font-family: 'Salsa', cursive;
     color: grey;
 }
 
 
-.satelite-view-description form div {
+.satellite-view-description form div {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 
-.satelite-view-description form div label {
+.satellite-view-description form div label {
     color: whitesmoke;
     font-family: 'Salsa', cursive;
     text-shadow: 5px 0px 7px rgba(0,0,0,0.68);
@@ -531,7 +531,7 @@ table td img {
 }
 
 
-.satelite-view-description form div select {
+.satellite-view-description form div select {
     padding: 1rem 1rem 1rem 1rem;
     border-radius: 5px;
     font-size: 1.2rem;
@@ -542,13 +542,13 @@ table td img {
 }
 
 
-.satelite-view-description button:hover {
+.satellite-view-description button:hover {
     background-color: #124b8b;
     color: #d6d6d6;;
 }
 
 
-.satelite-view-description .file-upload-div button {
+.satellite-view-description .file-upload-div button {
     text-align: center;
     width: 45%;
     padding: 0.7rem 1.5rem;
@@ -557,13 +557,13 @@ table td img {
 }
 
 
-.satelite-view-description .file-upload-div button:hover {
+.satellite-view-description .file-upload-div button:hover {
     background-color: #009578;
     transform: translateY(-0.2rem);
 }
 
 
-.satelite-view-description .file-upload-div {
+.satellite-view-description .file-upload-div {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -572,7 +572,7 @@ table td img {
 }
 
 
-.satelite-view-description .file-upload-div span {
+.satellite-view-description .file-upload-div span {
     font-size: 1.2rem;
     font-family: 'Salsa', cursive;
     color: whitesmoke;
