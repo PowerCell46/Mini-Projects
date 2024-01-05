@@ -164,36 +164,6 @@ html {
 }
 
 
-
-@media screen and (min-width: 2501px) { 
-    .post-product-main form  {
-        gap: 2.4rem;
-    }
-}
-
-
-@media screen and (max-width: 1900px) {
-    .post-product-main {
-        margin-left: -0.5vw;
-    }
-
-
-    .post-product-main h1 {
-        margin-top: 15vh;
-    }
-
-
-    .post-product-main {
-        padding-bottom: 12.5vh;
-    }
-
-
-    .post-product-main .err-input-field {
-        border: 3px solid rgb(130, 3, 3);
-    }
-}
-
-
 @media screen and (min-width: 2501px) { 
     html {
         font-size: 22.5px;
@@ -279,17 +249,6 @@ header li div img {
     display: inline-block;
 }
 
-
-
-@media screen and (min-width: 2501px) { 
-    #cart-div {
-        margin-left: -18vw;
-        display: flex;
-        position: relative;
-        left: 4.5vw;
-        text-decoration: none;
-    }    
-}
 
 
 #sofia-uni-logo {

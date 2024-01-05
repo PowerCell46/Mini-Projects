@@ -1,38 +1,29 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post Satellite Imagery</title>
     <link rel="stylesheet" href="{% static '/style/style.css' %}">
-    <title>MyPlantApp</title>
+    <link rel="shortcut icon" href="./SU.png" type="image/x-icon">
 </head>
-
 <body>
-<div id="box">
     <header>
-        <h1><a class="index-navigation" href="{% url 'home page' %}">MyPlants</a></h1>
-        <nav>
-{#            {% if profile %}#}
-                <a href="{% url 'catalogue' %}">Catalogue</a>
-                <a href="{% url 'create plant' %}">Create Plant</a>
-                <a href="{% url 'profile details' %}">Profile</a>
-{#            {% else %}#}
-                <a href="{% url 'create profile' %}">Create Profile</a>
-{#            {% endif %}#}
+        <li><a href="https://earthexplorer.usgs.gov/">USGS</a></li>
 
-        </nav>
+        <li><a href="https://apps.sentinel-hub.com/eo-browser/?zoom=8&lat=42.91822&lng=24.41711&themeId=DEFAULT-THEME&toTime=2024-01-02T12%3A48%3A22.308Z" target="_blank">Sentinel Hub</a></li>
+
+        <li><a href="https://www.uni-sofia.bg/index.php/bul/universitet_t/fakulteti/geologo_geografski_fakultet" target="_blank"><img src="./SU.png" alt="" id="sofia-uni-logo"> </a></li>
+
+        <li><a href="https://worldview.earthdata.nasa.gov/?v=19.788142459987718,39.933428306306816,30.109453906907305,45.72303894606328&l=Reference_Labels_15m(hidden),Reference_Features_15m(hidden),Coastlines_15m,VIIRS_SNPP_DayNightBand_At_Sensor_Radiance,VIIRS_SNPP_DayNightBand_AtSensor_M15(hidden),VIIRS_SNPP_CorrectedReflectance_TrueColor(hidden)&lg=true&t=2022-02-06-T00%3A00%3A00Z">NASA</a></li>
+
+        <li><a href="https://github.com/PowerCell46/Mini-Projects/tree/main/SofiaUniSatelliteExplorer" target="_blank">Source Code</a></li>
+
     </header>
 
         {% block content %}
 
         {% endblock %}
-
-    <footer>
-        &copy;SoftUni Team 2022. All rights reserved.
-    </footer>
-
-</div>
 </body>
 </html>
