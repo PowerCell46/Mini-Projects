@@ -455,9 +455,9 @@ table td img {
 }
 
 
-#starting-div img {
+#starting-div #home-page-main-img {
     height: auto;
-    width: 50vw;
+    width: 45vw;
     border-radius: 1rem;
     animation: hithere 10s ease-in-out infinite;
     transition: 600ms ease-in-out;
@@ -700,8 +700,7 @@ section {
 
 
 footer {
-    margin-top: 5vh;
-    /* background-color: #820303; */
+    margin-top: 10vh;
 }
 
 
