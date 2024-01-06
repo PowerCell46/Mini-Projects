@@ -30,10 +30,10 @@
                 <th>Image</th>
             </tr>
             {% for data in satelliteData %}
-                <tr>
+                <tr onclick="window.location.href='{% url "true colour details view" pk=data.pk %}';">
                     <td>{{ data.imageDate }}</td>
                     <td>{{ data.territory }}</td>
-<td><img src="{{ data.trueColourImage.url }}" alt="{{ data.territory }}, {{ data.imageDate }}"></td>
+                    <td><img src="{{ data.trueColourImage.url }}" alt="{{ data.territory }}, {{ data.imageDate }}"></td>
                 </tr>
             {% endfor %}
         </table>

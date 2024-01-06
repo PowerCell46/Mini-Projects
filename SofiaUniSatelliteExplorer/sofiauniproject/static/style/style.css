@@ -127,7 +127,7 @@ label {
 
 .create-satelite-image {
     width: 100.1vw;
-    height: 150vh;
+    height: 140vh;
     margin: auto auto;
     margin-left: -0.4vw;
     display: flex;
@@ -145,7 +145,7 @@ label {
     font-family: 'Permanent Marker', cursive;
     text-shadow: 5px 0px 7px rgba(0,0,0,0.68);
     letter-spacing: 0.8rem;
-    margin-top: 10vh;
+    margin-top: 5vh;
     margin-bottom: 4vh;
 }
 
@@ -695,3 +695,61 @@ section {
     from { transform: scale(0.8); }
     to { transform: scale(1.2); }
 }
+
+/* Footer */
+
+
+footer {
+    margin-top: 5vh;
+    /* background-color: #820303; */
+}
+
+
+footer ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+footer ul li {
+    list-style: none;
+    animation: float 6s ease-in-out infinite;
+}
+
+
+footer ul li a {
+    text-decoration: none;
+    color: rgb(222, 215, 215);
+    font-size: 1.5rem;
+    text-shadow: 5px 0px 7px rgba(0,0,0,0.68);
+    transition: 600ms ease-in-out;
+    font-family: 'Salsa';
+    letter-spacing: 0.15rem;
+}
+
+
+footer ul li a i {
+    font-size: 2.2rem;
+    margin-right: 0.5rem;
+}
+
+
+footer ul li a:hover {
+    color: whitesmoke;
+}
+
+
+footer h1 {
+    animation: float 6s ease-in-out infinite;
+    color: rgb(222, 215, 215);
+    text-align: center;
+    margin-top: 7.5vh;
+    margin-bottom: 3.5vh;
+    font-family: 'Salsa', cursive;
+    text-shadow: 5px 0px 7px rgba(0,0,0,0.68);
+    letter-spacing: 0.3rem;
+    font-size: 2.25rem;
+}
+
+/* End of Footer */

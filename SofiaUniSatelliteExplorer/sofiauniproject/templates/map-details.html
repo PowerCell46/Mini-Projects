@@ -9,11 +9,11 @@
         <section>
                 {% if map_type == 'true-colour' %}
                     <div class="side-images">
-                        <div>
+                        <div onclick="window.location.href='{% url "false colour details view" pk=satelliteData.pk %}';">
                             <img src="{{ satelliteData.falseColourImage.url }}" alt="{{ satelliteData.territory }}, {{ satelliteData.imageDate }} False Colour">
                             <p>False Colour</p>
                         </div>
-                        <div>
+                        <div onclick="window.location.href='{% url "ndvi details view" pk=satelliteData.pk %}';">
                             <img src="{{ satelliteData.NDVIimage.url }}" alt="{{ satelliteData.territory }}, {{ satelliteData.imageDate }} NDVI">
                             <p>NDVI</p>
                         </div>
@@ -25,11 +25,11 @@
 
                 {% if map_type == 'false-colour' %}
                     <div class="side-images">
-                        <div>
+                        <div onclick="window.location.href='{% url "true colour details view" pk=satelliteData.pk %}';">
                             <img src="{{ satelliteData.trueColourImage.url }}" alt="{{ satelliteData.territory }}, {{ satelliteData.imageDate }} True Colour">
-                            <p>False Colour</p>
+                            <p>True Colour</p>
                         </div>
-                        <div>
+                        <div onclick="window.location.href='{% url "ndvi details view" pk=satelliteData.pk %}';">
                             <img src="{{ satelliteData.NDVIimage.url }}" alt="{{ satelliteData.territory }}, {{ satelliteData.imageDate }} NDVI">
                             <p>NDVI</p>
                         </div>
@@ -41,13 +41,13 @@
 
                 {% if map_type == 'ndvi' %}
                     <div class="side-images">
-                        <div>
+                        <div onclick="window.location.href='{% url "true colour details view" pk=satelliteData.pk %}';">
                             <img src="{{ satelliteData.trueColourImage.url }}" alt="{{ satelliteData.territory }}, {{ satelliteData.imageDate }} True Colour">
-                            <p>False Colour</p>
+                            <p>True Colour</p>
                         </div>
-                        <div>
+                        <div onclick="window.location.href='{% url "false colour details view" pk=satelliteData.pk %}';">
                             <img src="{{ satelliteData.falseColourImage.url }}" alt="{{ satelliteData.territory }}, {{ satelliteData.imageDate }} False Colour">
-                            <p>NDVI</p>
+                            <p>False Colour</p>
                         </div>
                     </div>
                     <a href="{{ satelliteData.NDVIimage.url }}" download="{{ satelliteData.territory }}, {{ satelliteData.imageDate }}.jpg">
