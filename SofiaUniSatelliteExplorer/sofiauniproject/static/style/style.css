@@ -113,10 +113,21 @@ header li div img {
 
 /* Create Satelite Image */
 
+label {
+    align-self: center;
+    color: whitesmoke;
+    font-family: 'Salsa', cursive;
+    text-shadow: 5px 0px 7px rgba(0,0,0,0.68);
+    font-size: 1.6rem;
+    margin-right: 0.7em;
+    letter-spacing: 0.08rem;
+    font-weight: 600;
+    margin-bottom: -2.5vh;
+}
 
 .create-satelite-image {
     width: 100.1vw;
-    height: 145vh;
+    height: 150vh;
     margin: auto auto;
     margin-left: -0.4vw;
     display: flex;
@@ -134,7 +145,7 @@ header li div img {
     font-family: 'Permanent Marker', cursive;
     text-shadow: 5px 0px 7px rgba(0,0,0,0.68);
     letter-spacing: 0.8rem;
-    margin-top: 5vh;
+    margin-top: 10vh;
     margin-bottom: 4vh;
 }
 
@@ -146,7 +157,7 @@ header li div img {
 }
 
 
-.create-satelite-image form input {
+.create-satelite-image form input, select {
     padding: 1.2rem 1.2rem 1.2rem 1.2rem;
     border-radius: 5px;
     font-size: 1.2rem;
@@ -581,7 +592,7 @@ table td img {
 }
 
 
-.main-satelite-view {
+.main-satellite-view {
     width: 70vw;
     border-radius: 0.5rem;
     margin-bottom: 7.5vh;

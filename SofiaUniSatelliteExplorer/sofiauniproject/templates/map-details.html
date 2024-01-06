@@ -4,29 +4,59 @@
 {% block content %}
 
     <main class="satellite-view-description">
-        <h1>Sofia, Bulgaria, 2023-12-29</h1>
+        <h1>{{ satelliteData.territory }}, {{ satelliteData.imageDate }}</h1>
 
         <section>
-                <div class="side-images">
-                    <div>
-                        <img src="{% static 'images/2023-12-29-00_00_2023-12-29-23_59_Landsat_8-9_L1_True_color.jpg' %}" alt="Sofia, Bulgaria, 2023-12-29 True Colour">
-                        <p>True Colour</p>
+                {% if map_type == 'true-colour' %}
+                    <div class="side-images">
+                        <div>
+                            <img src="{{ satelliteData.falseColourImage.url }}" alt="{{ satelliteData.territory }}, {{ satelliteData.imageDate }} False Colour">
+                            <p>False Colour</p>
+                        </div>
+                        <div>
+                            <img src="{{ satelliteData.NDVIimage.url }}" alt="{{ satelliteData.territory }}, {{ satelliteData.imageDate }} NDVI">
+                            <p>NDVI</p>
+                        </div>
                     </div>
-                    <div>
-                        <img src="{% static 'images/2023-12-29-00_00_2023-12-29-23_59_Landsat_8-9_L1_True_color.jpg' %}" alt="Sofia, Bulgaria, 2023-12-29 False Colour">
-                        <p>False Colour</p>
-                    </div>
-                    <div>
-                        <img src="{% static 'images/2023-12-29-00_00_2023-12-29-23_59_Landsat_8-9_L1_True_color.jpg' %}" alt="Sofia, Bulgaria, 2023-12-29 Thermal Image">
-                        <p>Thermal Image</p>
-                    </div>
-                </div>
+                    <a href="{{ satelliteData.trueColourImage.url }}" download="{{ satelliteData.territory }}, {{ satelliteData.imageDate }}.jpg">
+                        <img src="{{ satelliteData.trueColourImage.url }}" class="main-satellite-view" alt="{{ satelliteData.territory }}, {{ satelliteData.imageDate }}">
+                    </a>
+                {% endif %}
 
-                <a href="{% static 'images/2023-12-29-00_00_2023-12-29-23_59_Landsat_8-9_L1_True_color.jpg' %}" download="Sofia, Bulgaria, 2023-12-29.jpg">
-                    <img src="{% static 'images/2023-12-29-00_00_2023-12-29-23_59_Landsat_8-9_L1_True_color.jpg' %}" class="main-satelite-view" alt="Sofia, Bulgaria, 2023-12-29">
-                </a>
+                {% if map_type == 'false-colour' %}
+                    <div class="side-images">
+                        <div>
+                            <img src="{{ satelliteData.trueColourImage.url }}" alt="{{ satelliteData.territory }}, {{ satelliteData.imageDate }} True Colour">
+                            <p>False Colour</p>
+                        </div>
+                        <div>
+                            <img src="{{ satelliteData.NDVIimage.url }}" alt="{{ satelliteData.territory }}, {{ satelliteData.imageDate }} NDVI">
+                            <p>NDVI</p>
+                        </div>
+                    </div>
+                    <a href="{{ satelliteData.falseColourImage.url }}" download="{{ satelliteData.territory }}, {{ satelliteData.imageDate }}.jpg">
+                        <img src="{{ satelliteData.falseColourImage.url }}" class="main-satellite-view" alt="{{ satelliteData.territory }}, {{ satelliteData.imageDate }}">
+                    </a>
+                {% endif %}
+
+                {% if map_type == 'ndvi' %}
+                    <div class="side-images">
+                        <div>
+                            <img src="{{ satelliteData.trueColourImage.url }}" alt="{{ satelliteData.territory }}, {{ satelliteData.imageDate }} True Colour">
+                            <p>False Colour</p>
+                        </div>
+                        <div>
+                            <img src="{{ satelliteData.falseColourImage.url }}" alt="{{ satelliteData.territory }}, {{ satelliteData.imageDate }} False Colour">
+                            <p>NDVI</p>
+                        </div>
+                    </div>
+                    <a href="{{ satelliteData.NDVIimage.url }}" download="{{ satelliteData.territory }}, {{ satelliteData.imageDate }}.jpg">
+                        <img src="{{ satelliteData.NDVIimage.url }}" class="main-satellite-view" alt="{{ satelliteData.territory }}, {{ satelliteData.imageDate }}">
+                    </a>
+                {% endif %}
         </section>
-        <a id="link-to-source" target="_blank" href="https://apps.sentinel-hub.com/eo-browser/?zoom=9&lat=42.64507&lng=24.07928&themeId=DEFAULT-THEME&visualizationUrl=https%3A%2F%2Fcreodias.sentinel-hub.com%2Fogc%2Fwms%2F82f84fab-9b1c-4322-beeb-207b0f05afef&datasetId=S3OLCI&fromTime=2024-01-03T00%3A00%3A00.000Z&toTime=2024-01-03T23%3A59%3A59.999Z&layerId=2_OTCI&demSource3D=%22MAPZEN%22#search">Link to Source</a>
+
+        <a id="link-to-source" target="_blank" href="{{ satelliteData.sourceUrl }}">Link to Source</a>
 
     </main>
 

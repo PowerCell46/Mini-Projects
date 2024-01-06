@@ -26,39 +26,16 @@
         <table>
             <tr>
                 <th>Date</th>
-                <th>Teritory</th>
+                <th>Territory</th>
                 <th>Image</th>
             </tr>
-            <tr>
-                <td>2023-12-29</td>
-                <td>Sofia, Bulgaria</td>
-                <td><img src="{% static 'images/2023-12-29-00_00_2023-12-29-23_59_Landsat_8-9_L1_True_color.jpg' %}" alt="Sofia, Bulgaria 2023-12-29"></td>
-            </tr>
-            <tr>
-                <td>2023-12-29</td>
-                <td>Sofia, Bulgaria</td>
-                <td><img src="{% static 'images/2023-12-29-00_00_2023-12-29-23_59_Landsat_8-9_L1_True_color.jpg' %}" alt="Sofia, Bulgaria 2023-12-29"></td>
-            </tr>
-            <tr>
-                <td>2023-12-29</td>
-                <td>Sofia, Bulgaria</td>
-                <td><img src="{% static 'images/2023-12-29-00_00_2023-12-29-23_59_Landsat_8-9_L1_True_color.jpg' %}" alt="Sofia, Bulgaria 2023-12-29"></td>
-            </tr>
-            <tr>
-                <td>2023-12-29</td>
-                <td>Sofia, Bulgaria</td>
-                <td><img src="{% static 'images/2023-12-29-00_00_2023-12-29-23_59_Landsat_8-9_L1_True_color.jpg' %}" alt="Sofia, Bulgaria 2023-12-29"></td>
-            </tr>
-            <tr>
-                <td>2023-12-29</td>
-                <td>Sofia, Bulgaria</td>
-                <td><img src="{% static 'images/2023-12-29-00_00_2023-12-29-23_59_Landsat_8-9_L1_True_color.jpg' %}" alt="Sofia, Bulgaria 2023-12-29"></td>
-            </tr>
-            <tr>
-                <td>2023-12-29</td>
-                <td>Sofia, Bulgaria</td>
-                <td><img src="{% static 'images/2023-12-29-00_00_2023-12-29-23_59_Landsat_8-9_L1_True_color.jpg' %}" alt="Sofia, Bulgaria 2023-12-29"></td>
-            </tr>
+            {% for data in satelliteData %}
+                <tr>
+                    <td>{{ data.imageDate }}</td>
+                    <td>{{ data.territory }}</td>
+<td><img src="{{ data.trueColourImage.url }}" alt="{{ data.territory }}, {{ data.imageDate }}"></td>
+                </tr>
+            {% endfor %}
         </table>
 
     </main>
