@@ -13,8 +13,34 @@ This project utilizes Django for server-side rendering and implements a Multi-Pa
 - Dynamic showcase on the main page for a visual overview of added satellite imagery.
 
 # Project Documentation
+
 <p align="center">
-    <img height="300em" src="https://github.com/PowerCell46/Fitness-Pro-Gym-React-Project/blob/master/screenshots/HomePage.PNG" alt="homePage.jpg"/>
+    <img height="300em" src="https://github.com/PowerCell46/Mini-Projects/blob/main/SofiaUniSatelliteExplorer/images/HomeView1.PNG" alt="homePage.jpg"/>
     <br>
 </p>
-    Guest Header with the Greeting Section in the Home view.
+    Welcoming view to the website
+
+<p align="center">
+    <img height="300em" src="https://github.com/PowerCell46/Mini-Projects/blob/main/SofiaUniSatelliteExplorer/images/HomeView2.PNG" alt="homePage2.jpg"/>
+    <br>
+</p>
+    Description of the main purpose of the project
+
+<p align="center">
+    <img height="300em" src="https://github.com/PowerCell46/Mini-Projects/blob/main/SofiaUniSatelliteExplorer/images/HomeView3.PNG" alt="homePage3.jpg"/>
+    <br>
+</p>
+    A table showing the created imageries from the Users.
+
+<p align="center">
+    <img height="300em" src="https://github.com/PowerCell46/Mini-Projects/blob/main/SofiaUniSatelliteExplorer/images/PostSatellite.PNG" alt="postsatellite.jpg"/>
+    <br>
+</p>
+    Post Satellite Imagery View, allowing the Users to add data to the web application.
+
+<p align="center">
+    <img height="300em" src="https://github.com/PowerCell46/Mini-Projects/blob/main/SofiaUniSatelliteExplorer/images/SatelliteImageryDesc.PNG" alt="satelliteDesc.jpg"/>
+    <br>
+</p>
+    Satellite Imagery Description.
+
