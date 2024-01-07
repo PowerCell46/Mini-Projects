@@ -14,6 +14,7 @@ This project utilizes Django for server-side rendering and implements a Multi-Pa
 
 # Project Documentation
 
+#### Home View
 <p align="center">
     <img height="300em" src="https://github.com/PowerCell46/Mini-Projects/blob/main/SofiaUniSatelliteExplorer/images/HomeView1.PNG" alt="homePage.jpg"/>
     <br>
@@ -33,14 +34,18 @@ This project utilizes Django for server-side rendering and implements a Multi-Pa
     <br>
 </p>
     A table showing the created imageries from the Users.
+    <br>
 
+#### Post Satellite Imagery View
 <p align="center">
     <br>
     <img height="300em" src="https://github.com/PowerCell46/Mini-Projects/blob/main/SofiaUniSatelliteExplorer/images/PostSatellite.PNG" alt="postsatellite.jpg"/>
     <br>
 </p>
     Post Satellite Imagery View, allowing the Users to add data to the web application.
+    <br>
 
+#### Satellite Imagery Description View
 <p align="center">
     <br>
     <img height="300em" src="https://github.com/PowerCell46/Mini-Projects/blob/main/SofiaUniSatelliteExplorer/images/SatelliteImageryDesc.PNG" alt="satelliteDesc.jpg"/>
@@ -48,4 +53,3 @@ This project utilizes Django for server-side rendering and implements a Multi-Pa
 </p>
     Satellite Imagery Description.
 <br>
-
