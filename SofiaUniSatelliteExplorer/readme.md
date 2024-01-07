@@ -12,4 +12,9 @@ This project utilizes Django for server-side rendering and implements a Multi-Pa
 - Enrichment of images with various spectral indexes.
 - Dynamic showcase on the main page for a visual overview of added satellite imagery.
 
-
+# Project Documentation
+<p align="center">
+    <img height="300em" src="https://github.com/PowerCell46/Fitness-Pro-Gym-React-Project/blob/master/screenshots/HomePage.PNG" alt="homePage.jpg"/>
+    <br>
+</p>
+    Guest Header with the Greeting Section in the Home view.
