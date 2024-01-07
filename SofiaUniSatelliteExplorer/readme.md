@@ -35,6 +35,7 @@ This project utilizes Django for server-side rendering and implements a Multi-Pa
 </p>
     A table showing the created imageries from the Users.
     <br>
+    <hr>
 
 #### Post Satellite Imagery View
 <p align="center">
@@ -44,6 +45,7 @@ This project utilizes Django for server-side rendering and implements a Multi-Pa
 </p>
     Post Satellite Imagery View, allowing the Users to add data to the web application.
     <br>
+    <hr>
 
 #### Satellite Imagery Description View
 <p align="center">
