@@ -27,13 +27,23 @@
             <tr>
                 <th>Date</th>
                 <th>Territory</th>
+                <th>Data Source</th>
                 <th>Image</th>
             </tr>
             {% for data in satelliteData %}
                 <tr onclick="window.location.href='{% url "true colour details view" pk=data.pk %}';">
                     <td>{{ data.imageDate }}</td>
                     <td>{{ data.territory }}</td>
-                    <td><img src="{{ data.trueColourImage.url }}" alt="{{ data.territory }}, {{ data.imageDate }}"></td>
+                    {% if data.dataSource == 'S-2' %}
+                        <td>Sentinel-2</td>
+                    {% else %}
+                        {% if data.dataSource == 'L-8' %}
+                            <td>Landsat 8-9</td>
+                        {% else %}
+                            <td>Copernicus Services</td>
+                        {% endif %}
+                    {% endif %}
+                <td><img src="{{ data.trueColourImage.url }}" alt="{{ data.territory }}, {{ data.imageDate }}"></td>
                 </tr>
             {% endfor %}
         </table>

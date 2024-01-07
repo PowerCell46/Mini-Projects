@@ -127,7 +127,7 @@ label {
 
 .create-satelite-image {
     width: 100.1vw;
-    height: 140vh;
+    height: 150vh;
     margin: auto auto;
     margin-left: -0.4vw;
     display: flex;
@@ -145,7 +145,7 @@ label {
     font-family: 'Permanent Marker', cursive;
     text-shadow: 5px 0px 7px rgba(0,0,0,0.68);
     letter-spacing: 0.8rem;
-    margin-top: 5vh;
+    margin-top: 7.5vh;
     margin-bottom: 4vh;
 }
 
@@ -457,9 +457,9 @@ table td img {
 
 #starting-div #home-page-main-img {
     height: auto;
-    width: 45vw;
+    width: 40vw;
     border-radius: 1rem;
-    animation: hithere 10s ease-in-out infinite;
+    animation: hithere 12s ease-in-out infinite;
     transition: 600ms ease-in-out;
 }
 
@@ -621,6 +621,7 @@ section {
 
 .side-images div {
     transition: 600ms ease-in-out;
+    cursor: pointer;
 }
 
 
@@ -659,7 +660,7 @@ section {
 
 #link-to-source:hover {
     text-decoration: underline;
-    color: rgb(216, 212, 212);
+    color: rgb(222, 215, 215);
 }
 
 
@@ -700,7 +701,7 @@ section {
 
 
 footer {
-    margin-top: 10vh;
+    margin-top: 5vh;
 }
 
 
@@ -720,7 +721,7 @@ footer ul li {
 footer ul li a {
     text-decoration: none;
     color: rgb(222, 215, 215);
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     text-shadow: 5px 0px 7px rgba(0,0,0,0.68);
     transition: 600ms ease-in-out;
     font-family: 'Salsa';
@@ -729,7 +730,7 @@ footer ul li a {
 
 
 footer ul li a i {
-    font-size: 2.2rem;
+    font-size: 1.8rem;
     margin-right: 0.5rem;
 }
 
@@ -748,7 +749,21 @@ footer h1 {
     font-family: 'Salsa', cursive;
     text-shadow: 5px 0px 7px rgba(0,0,0,0.68);
     letter-spacing: 0.3rem;
-    font-size: 2.25rem;
+    font-size: 1.8rem;
+    transition: 600ms ease-in-out;
+    cursor: pointer;
 }
+
+footer h1:hover {
+    color: whitesmoke;
+}
+
+
+
+#link-to-source-footer {
+    text-decoration: none;
+    color: transparent;
+}
+
 
 /* End of Footer */
