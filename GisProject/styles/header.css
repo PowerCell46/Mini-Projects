@@ -1,0 +1,36 @@
+header {
+    background-color: antiquewhite;
+}
+
+header h1 {
+    position: absolute;
+    color: whitesmoke;
+    font-size: 7rem;
+    left: 50%;
+    top: 2.5vh;
+    transform: translateX(-50%);
+    text-shadow: 4px -2px 3px rgba(0,0,0,0.59);
+}
+
+header{
+    background-image: url('../images/88364ac9-3daa-4eb6-a4ba-7d8ce843e15b.jpg');
+    width: 100vw;
+    height: 60vh;
+    background-size: cover;
+    background-attachment: fixed;
+    animation-name: bgPositionAnim;
+    animation-duration: 10s;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes bgPositionAnim {
+    0% {
+        background-position: center calc(100%);
+    }
+    100% {
+        background-position: center;
+    }
+  }
