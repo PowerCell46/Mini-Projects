@@ -1,0 +1,63 @@
+.navigation {
+    width: 100vw;
+    height: 10vh;
+    background-image: linear-gradient(to right top, #249b00, #49af03, #69c306, #89d70c, #a8eb12);    position: fixed;
+    top: 0; 
+    left: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.navigation li {
+    list-style: none;
+    cursor: pointer;
+    font-family: 'Salsa', cursive;
+    text-shadow: 5px 0px 7px rgba(0,0,0,0.68);
+    letter-spacing: 0.13rem;
+    font-size: 1.5rem;
+    animation: float 6s ease-in-out infinite;
+    color: whitesmoke;
+    transform: translatey(0px);
+}
+
+
+.navigation li a {
+    text-decoration: none;
+    color: whitesmoke;
+    transition: all 0.3s ease-in-out;
+}
+
+
+.navigation li a:before {
+    content: "";
+    width: 0;
+    height: 3px;
+    bottom: 5px;
+    left: 0;
+    bottom: -7.5px;
+    z-index: 0;
+    position: absolute;
+    background: #0B1215;
+    transition: all 0.3s ease-in-out;
+}
+
+
+.navigation li a:hover {
+    text-decoration: underline;
+    background-position: 0%;
+}
+
+
+.navigation li a:hover:before {
+    width: 100%;
+}
+
+
+.navigation li div img {
+    border-radius: 10%;
+    height: 5vh;
+    width: calc(5vh * 1.02);
+}
