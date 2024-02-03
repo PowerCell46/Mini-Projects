@@ -17,7 +17,7 @@
     font-family: 'Salsa', cursive;
     text-shadow: 5px 0px 7px rgba(0,0,0,0.68);
     letter-spacing: 0.13rem;
-    font-size: 1.5rem;
+    font-size: 0.8rem;
     animation: float 6s ease-in-out infinite;
     color: whitesmoke;
     transform: translatey(0px);
@@ -34,10 +34,10 @@
 .navigation li a:before {
     content: "";
     width: 0;
-    height: 3px;
+    height: 1.5px;
     bottom: 5px;
     left: 0;
-    bottom: -7.5px;
+    bottom: -6px;
     z-index: 0;
     position: absolute;
     background: #0B1215;
