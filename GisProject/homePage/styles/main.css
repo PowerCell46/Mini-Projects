@@ -17,6 +17,7 @@
     height: 0;
     overflow: hidden;
     transition: opacity 1000ms ease-in-out, height 1000ms ease-in-out;
+
 }
 
 .hidden.active {
@@ -44,3 +45,23 @@
 @keyframes fade-in {
     to {scale: 1; opacity: 1;}
 }
+
+/* .separator-container {
+    height: 20vh;
+    background-image: url('../images/Leonardo_Diffusion_XL_can_you_generate_me_an_image_showing_the_3.jpg');
+    background-size: cover;
+    animation-name: bgPositionAnim;
+    animation-duration: 10s;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+@keyframes bgPositionAnim {
+    0% {
+        background-position: center calc(100%);
+    }
+    100% {
+        background-position: center;
+    }
+} */
