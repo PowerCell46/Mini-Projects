@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
 
+
+
 .dropdown-section {
     padding: 2.5vh;
     background-color: #3b3c36;
@@ -11,13 +13,19 @@
     font-size: 0.8rem;
 }
 
+.dropdown-section:first-child {
+    padding-top: 8vh;
+}
+
 .hidden {
     padding-top: 2.5vh;
     opacity: 0;
     height: 0;
     overflow: hidden;
     transition: opacity 1000ms ease-in-out, height 1000ms ease-in-out;
-
+    letter-spacing: 0.03rem;
+    line-height: 1.25;
+    width: 80%;
 }
 
 .hidden.active {
@@ -36,18 +44,40 @@
 
 
 .images {
-    scale: .8; opacity: 0;
+    height: 60vh;
+    width: 35vw;
+    scale: .8; 
+    opacity: 0;
     animation: fade-in linear forwards;
     animation-timeline: view();
     animation-range: entry; 
+    margin-top: 7vh;
+    border-radius: 0.4rem;
+    box-shadow: 1px 6px 16px 0px rgba(0,0,0,0.75);
+    transition: 600ms ease-in-out;
 }
+
+.images:hover {
+    transform: scale(1.1);
+}
+
+
 
 @keyframes fade-in {
     to {scale: 1; opacity: 1;}
 }
 
-/* .separator-container {
-    height: 20vh;
+
+.image-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #3b3c36;
+}
+
+.separator-container {
+    height: 40vh;
     background-image: url('../images/Leonardo_Diffusion_XL_can_you_generate_me_an_image_showing_the_3.jpg');
     background-size: cover;
     animation-name: bgPositionAnim;
@@ -64,4 +94,5 @@
     100% {
         background-position: center;
     }
-} */
+}
+
