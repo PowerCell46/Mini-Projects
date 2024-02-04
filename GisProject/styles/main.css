@@ -13,7 +13,15 @@
 
 .hidden {
     padding-top: 2.5vh;
-    display: none;
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+    transition: opacity 1000ms ease-in-out, height 1000ms ease-in-out;
+}
+
+.hidden.active {
+    opacity: 1;
+    height: auto;
 }
 
 .shown {
