@@ -1,28 +1,49 @@
 .card {
-    margin-top: 15vh;
+    margin-top: 12.5vh;
     border-radius: 0.6rem;
     margin-left: -0.5vw;
-    width: 75vw;
+    width: 65vw;
     background-color: rgba(255, 255, 255, 0.4); 
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    box-shadow: 4px 4px 18px 1px rgba(0,0,0,0.75);
 }
 
 .dropdown-section {
     background-color: transparent;
 }
 
-.card i {
+.fa-arrow-left {
     position: absolute;
     color: whitesmoke;
-}
-
-.fa-arrow-left {
     left: 13.5%;
 }
 
 .fa-arrow-right {
+    position: absolute;
+    color: whitesmoke;
     left: 85%;
+}
+
+#dropdown-i {
+    position: relative;
+    top: 3.8vh;
+    font-size: 1rem;
+}
+
+.dropdown-section h5 {
+    font-size: 1rem
+}
+
+.hidden p {
+    margin-top: -2.5vh;
+}
+
+.card .images {
+    margin-top: 5vh;
+    height: 50vh;
+    width: 30vw;
+    margin-bottom: 0vh;
 }
