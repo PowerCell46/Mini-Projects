@@ -1,7 +1,8 @@
 .navigation {
     width: 100vw;
     height: 10vh;
-    background-image: linear-gradient(to right top, #249b00, #49af03, #69c306, #89d70c, #a8eb12);    position: fixed;
+    background-image: linear-gradient(to right top, #249b00, #49af03, #69c306, #89d70c, #a8eb12);    
+    position: fixed;
     top: 0; 
     left: 0;
     z-index: 100;
@@ -18,7 +19,7 @@
     text-shadow: 5px 0px 7px rgba(0,0,0,0.68);
     letter-spacing: 0.13rem;
     font-size: 0.8rem;
-    animation: float 6s ease-in-out infinite;
+    animation: float 4s ease-in-out infinite;
     color: whitesmoke;
     transform: translatey(0px);
 }
@@ -59,6 +60,10 @@
     height: 10vh;
 }
 
+/* .navigation li a img:before {
+
+} */
+
 
 .navigation li div img {
     border-radius: 10%;
@@ -77,4 +82,4 @@
     100% {
         transform: translatey(0px);
     }
-  }
+}
