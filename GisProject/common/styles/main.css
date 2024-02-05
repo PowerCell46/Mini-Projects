@@ -1,12 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
 
-html {
-    margin: 0px;
-}
-
-body {
-    margin: 0px;
-}
 
 main {
     background-color:#3b3c36;
@@ -15,6 +8,7 @@ main {
     align-items: center;
     padding-bottom: 7.5vh;
 }
+
 
 .dropdown-section {
     padding: 2.5vh;
@@ -28,9 +22,11 @@ main {
     font-size: 0.8rem;
 }
 
+
 .dropdown-section:first-child {
     padding-top: 8vh;
 }
+
 
 .hidden {
     padding-top: 2.5vh;
@@ -43,14 +39,17 @@ main {
     width: 80%;
 }
 
+
 .hidden.active {
     opacity: 1;
     height: auto;
 }
 
+
 .shown {
     display: flex;
 }
+
 
 .shown i {
     margin-right: 1vw;
@@ -58,10 +57,12 @@ main {
     animation: pulse 2.5s ease-in-out infinite;
 }
 
+
 @keyframes pulse {
     0%, 100% { transform: scale(1); }
     50% { transform: scale(1.2); }
 }
+
 
 .images {
     height: 60vh;
@@ -77,9 +78,11 @@ main {
     transition: 600ms ease-in-out;
 }
 
+
 .images:hover {
     transform: scale(1.1);
 }
+
 
 .images:first-child {
     margin-top: 7.5vh;
@@ -99,6 +102,7 @@ main {
     background-color: #3b3c36;
 }
 
+
 .separator-container {
     height: 40vh;
     background-image: url('../images/Leonardo_Diffusion_XL_can_you_generate_me_an_image_showing_the_3.jpg');
@@ -110,6 +114,7 @@ main {
     animation-iteration-count: infinite;
 }
 
+
 @keyframes bgPositionAnim {
     0% {
         background-position: center calc(100%);
@@ -118,6 +123,7 @@ main {
         background-position: center;
     }
 }
+
 
 h1 {
     margin-top: 12vh;
@@ -128,6 +134,7 @@ h1 {
     text-shadow: 5px 0px 7px rgba(0,0,0,0.68); 
     letter-spacing: 0.15rem;
 }
+
 
 h2 {
     width: 70%;
