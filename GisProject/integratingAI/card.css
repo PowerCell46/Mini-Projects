@@ -31,18 +31,15 @@
 }
 
 #dropdown-i {
-    position: relative;
-    top: 5.3vh;
+    margin-top: 3vh;
     font-size: 1rem;
 }
 
 .dropdown-section h5 {
     font-size: 1rem;
+    margin-top: 3vh;
 }
 
-.hidden p {
-    margin-top: -2.5vh;
-}
 
 .card .images {
     margin-top: 5vh;
