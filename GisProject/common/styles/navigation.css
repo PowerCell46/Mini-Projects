@@ -56,13 +56,17 @@
     width: 100%;
 }
 
+
 .navigation li a img {
     height: 10vh;
 }
 
-/* .navigation li a img:before {
 
-} */
+#home-page-img:hover:before {
+    content: none;
+    width: 0;
+}
+
 
 
 .navigation li div img {

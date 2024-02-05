@@ -21,6 +21,20 @@ footer h1 {
     margin-bottom: -1vh;
 }
 
+footer h1 a {
+    font-weight: 900;
+    text-shadow: none;
+    background-image: -webkit-linear-gradient(135deg, rgb(206, 5, 1), rgb(10, 0, 201));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+footer h1 a:hover {
+    transition: 600ms ease-in-out;
+    background-image: -webkit-linear-gradient(135deg, rgb(10, 0, 201), rgb(206, 5, 1));
+}
+
 footer a {
     color: whitesmoke;
     text-decoration: none;
