@@ -1,5 +1,5 @@
 footer {
-    background-image: linear-gradient(to right top, #249b00, #49af03, #69c306, #89d70c, #a8eb12); 
+    background: linear-gradient(to right top, #249b00, #49af03, #69c306, #89d70c, #a8eb12); 
     padding: 5vh 0;
     display: flex;
     align-items: center;
@@ -9,13 +9,13 @@ footer {
     text-shadow: 5px 0px 7px rgba(0,0,0,0.68);
     letter-spacing: 0.13rem;
     font-size: 0.8rem;
-    animation: float 6s ease-in-out infinite;
     color: whitesmoke;
     transform: translatey(0px);
 }
 
 footer h1 {
     font-size: 1.5rem;
+    animation: float 6s ease-in-out infinite, slideFromLeft 2s ease-in-out;
 }
 
 footer a {
@@ -27,14 +27,29 @@ footer a:hover {
     text-decoration: underline;
 }
 
+.footer-container {
+    display: flex;
+    flex-direction: column;
+}
+
 @keyframes float {
     0% {
         transform: translatey(0px);
     }
     50% {
-        transform: translatey(-0.2rem);
+        transform: translatey(-1rem);
     }
     100% {
         transform: translatey(0px);
     }
   }
+
+@keyframes slideFromLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    } to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
