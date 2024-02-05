@@ -1,9 +1,8 @@
 .card {
-    margin-top: 12.5vh;
     border-radius: 0.6rem;
     margin-left: -0.5vw;
     width: 65vw;
-    background-color: rgba(255, 255, 255, 0.3); 
+    background-color: rgba(255, 255, 255, 0.35); 
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -18,7 +17,7 @@
 .fa-arrow-left {
     position: absolute;
     color: whitesmoke;
-    left: 14.5%;
+    left: 14.3%;
     font-size: 1.3rem;
     cursor: pointer;
 }
@@ -33,12 +32,12 @@
 
 #dropdown-i {
     position: relative;
-    top: 3.8vh;
+    top: 5.3vh;
     font-size: 1rem;
 }
 
 .dropdown-section h5 {
-    font-size: 1rem
+    font-size: 1rem;
 }
 
 .hidden p {
@@ -50,4 +49,24 @@
     height: 50vh;
     width: 30vw;
     margin-bottom: 0vh;
+}
+
+iframe {
+    margin-bottom: 5vh;
+    scale: .8; 
+    opacity: 0;
+    animation: fade-in linear forwards;
+    animation-timeline: view();
+    animation-range: entry; 
+    border-radius: 0.2rem;
+    box-shadow: 4px 4px 18px 1px rgba(0,0,0,0.75);
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.fade-in-animation {
+    animation: fadeIn 2.5s;
 }

@@ -47,12 +47,18 @@ const cardsData = [
 ];
 
 function changeCardContent(index) {
-    document.querySelector("#current-card-index").textContent = index;
+    const card = document.querySelector(".card");
+    card.classList.remove("fade-in-animation");
 
+    document.querySelector("#current-card-index").textContent = index;
     document.querySelector(".images").src = cardsData[index].imageUrl;
     document.querySelector(".shown h5").textContent = cardsData[index].title;
     document.querySelector(".hidden p").textContent = cardsData[index].description;
+
+    void card.offsetWidth;
+    card.classList.add("fade-in-animation");
 }
+
 
 function incrementCard(e) {
     const currentIndex = Number(document.querySelector("#current-card-index").textContent) + 1 === cardsData.length ? 0 : Number(document.querySelector("#current-card-index").textContent) + 1;

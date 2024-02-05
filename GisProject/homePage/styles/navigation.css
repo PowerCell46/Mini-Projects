@@ -55,6 +55,10 @@
     width: 100%;
 }
 
+.navigation li a img {
+    height: 10vh;
+}
+
 
 .navigation li div img {
     border-radius: 10%;

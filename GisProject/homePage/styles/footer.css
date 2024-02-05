@@ -37,7 +37,7 @@ footer a:hover {
         transform: translatey(0px);
     }
     50% {
-        transform: translatey(-1rem);
+        transform: translatey(-0.2rem);
     }
     100% {
         transform: translatey(0px);
