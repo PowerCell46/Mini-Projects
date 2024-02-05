@@ -12,6 +12,8 @@
     crossorigin="anonymous"
     referrerpolicy="no-referrer"/>
     <script src="../homePage/main.js"></script>
+    <script src="./card.js"></script>
+    <link rel="icon" type="image/x-icon" href="../homePage/images/Leonardo_Diffusion_XL_can_you_generate_me_a_symbol_for_renewab_0.jpg">
 </head>
 <body>
     <section class="navigation">
@@ -22,8 +24,8 @@
 
       <main>
           <div class="card">
-            <i class="fa-solid fa-arrow-left fa-beat-fade"></i>
-            <i class="fa-solid fa-arrow-right fa-beat-fade"></i>
+            <p id="current-card-index" style="display: none;">0</p>
+            <i onclick="decrementCard(event)" class="fa-solid fa-arrow-left fa-beat-fade"></i>
             <img class="images" src="../homePage/images/Leonardo_Diffusion_XL_can_you_generate_me_a_symbol_for_renewab_0.jpg" alt="">
             <section class="dropdown-section">
                 <div class="shown">
@@ -40,8 +42,8 @@
                   <p>Компаниите могат да използват данни от ГИС, за да наблюдават промените в околната среда, причинени от техните дейности, като по този начин се оптимизира ефективността на работния процес.</p>
                 </div>
               </section>
+              <i onclick="incrementCard(event)" class="fa-solid fa-arrow-right fa-beat-fade"></i>
           </div>
-
       </main>
 
  
