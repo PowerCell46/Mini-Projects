@@ -16,7 +16,7 @@ header h1 {
     top: 12.5vh;
     transform: translateX(-50%);
     text-shadow: 4px -2px 3px rgba(0,0,0,0.59);
-    font-family: 'Permanent Marker', cursive;
+    animation: tracking-out-contract 14s cubic-bezier(0.550, 0.085, 0.680, 0.530) both infinite;
 }
 
 
@@ -39,5 +39,20 @@ header {
     }
     100% {
         background-position: center;
+    }
+}
+
+
+@keyframes tracking-out-contract {
+    0%, 57.14% { /* Up to ~8s of the 14s cycle */
+        opacity: 1;
+        letter-spacing: normal; /* Assuming normal letter-spacing initially */
+    }
+    28.57%, 57.14% { /* Starts changing around ~4s into the 14s cycle */
+        opacity: 1; /* Maintains full opacity until 8s */
+    }
+    100% {
+        letter-spacing: -0.5em;
+        opacity: 0;
     }
 }

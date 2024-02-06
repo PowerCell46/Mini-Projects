@@ -1,4 +1,4 @@
-.navigation {
+nav {
     width: 100vw;
     height: 10vh;
     background-image: linear-gradient(to right top, #249b00, #49af03, #69c306, #89d70c, #a8eb12);    
@@ -12,7 +12,7 @@
 }
 
 
-.navigation li {
+nav li {
     list-style: none;
     cursor: pointer;
     font-family: 'Salsa', cursive;
@@ -25,14 +25,14 @@
 }
 
 
-.navigation li a {
+nav li a {
     text-decoration: none;
     color: whitesmoke;
     transition: all 0.3s ease-in-out;
 }
 
 
-.navigation li a:before {
+nav li a:before {
     content: "";
     width: 0;
     height: 1.5px;
@@ -41,23 +41,23 @@
     bottom: -6px;
     z-index: 0;
     position: absolute;
-    background: #0B1215;
+    background: #2868bd;
     transition: all 0.3s ease-in-out;
 }
 
 
-.navigation li a:hover {
+nav li a:hover {
     text-decoration: underline;
     background-position: 0%;
 }
 
 
-.navigation li a:hover:before {
+nav li a:hover:before {
     width: 100%;
 }
 
 
-.navigation li a img {
+nav li a img {
     height: 10vh;
 }
 
@@ -69,7 +69,7 @@
 
 
 
-.navigation li div img {
+nav li div img {
     border-radius: 10%;
     height: 5vh;
     width: calc(5vh * 1.02);
