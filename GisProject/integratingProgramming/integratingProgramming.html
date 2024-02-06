@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Integrating AI</title>
-    <link rel="stylesheet" href="integratingAi.css" />
+    <title>Integrating Programming</title>
+    <link rel="stylesheet" href="integratingProgramming.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -13,7 +13,7 @@
       referrerpolicy="no-referrer"
     />
     <script src="../common/scripts/dropdown.js"></script>
-    <script src="./card.js"></script>
+    <script src="../common/scripts/card.js"></script>
     <link
       rel="icon"
       type="image/x-icon"
@@ -23,28 +23,18 @@
 
   <body>
     <nav>
-      <li>
-        <a id="home-page-img" href="../homePage/index.html "
-          ><img
-            src="../common/images/Default_Generate_visually_striking_logo_focusing_on_download_a_2_67a7c999-e9c6-4f37-a3c4-294d57b87099_0.png"
-            alt="home_link"
-        /></a>
-      </li>
-      <li><a href="">GIS technologies</a></li>
+      <li><a id="home-page-img" href="../homePage/index.html "><img src="../common/images/Default_Generate_visually_striking_logo_focusing_on_download_a_2_67a7c999-e9c6-4f37-a3c4-294d57b87099_0.png" alt="home_link"/></a></li>
+      <li><a href="../integratingGIS/integratingGIS.html">GIS technologies</a></li>
       <li><a href="">Programming</a></li>
-      <li>
-        <a href="../integratingAI/integratingAi.html"
-          >Artificial Intelligence</a
-        >
-      </li>
+      <li><a href="../integratingAI/integratingAi.html">Artificial Intelligence</a></li>
     </nav>
 
     <main>
-      <h1>Integrating AI</h1>
+      <h1>Integrating Programming</h1>
       <div class="card">
         <p id="current-card-index" style="display: none">0</p>
         <i
-          onclick="decrementCard(event)"
+          onclick="decrementCard(event, 'Programming')"
           class="fa-solid fa-arrow-left fa-beat-fade"
         ></i>
         <img
@@ -59,36 +49,26 @@
               class="fa-solid fa-arrow-down"
               id="dropdown-i"
             ></i>
-            <h5>По-добър мониторинг с данни в реално време</h5>
+            <h5>Анализ и моделиране на данни</h5>
           </div>
 
           <div class="hidden">
             <p>
-              Компаниите могат да използват данни от ГИС, за да наблюдават
-              промените в околната среда, причинени от техните дейности, като по
-              този начин се оптимизира ефективността на работния процес.
+              Програмирането е от съществено значение за събирането, анализирането и интерпретирането на данни от различни източници на зелена енергия. 
+За анализ на данни и моделиране в сектора на възобновяемата енергия често се използват програмни езици като Python и R.
             </p>
           </div>
         </section>
         <i
-          onclick="incrementCard(event)"
+          onclick="incrementCard(event, 'Programming')"
           class="fa-solid fa-arrow-right fa-beat-fade"
         ></i>
       </div>
 
       <h2>
-        Използване на ГИС технологии за определяне положението на соларни панели
+        Ролята на Data Science в менажирането на зелена енергия
       </h2>
-      <iframe
-        width="560"
-        height="315"
-        src="https://www.youtube.com/embed/aJixwDc74wI?si=VjcrRr3lGW-_bmTB"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen
-      >
-      </iframe>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/zA0OklGZlJ8?si=ZfTUW906lleYpfnl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </main>
 
     <footer>
