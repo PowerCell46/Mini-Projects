@@ -225,6 +225,7 @@ h2 {
 
 
 @media only screen and (max-width: 600px) {
+    
     h1 {
         text-align: center;
     }
@@ -240,7 +241,21 @@ h2 {
     }
 
     .shown {
-        margin-left: 7.5vw;
+        width: 80%;
+        gap: 0.5rem;
+    }
+
+    .shown h5 { 
+        font-size: 0.8rem;
+    }
+
+    .hidden {
+        font-size: 0.6rem;
+        text-align: center;
+    }
+
+    .shown i {
+        font-size: 0.8rem;
     }
 }
 
