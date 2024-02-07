@@ -201,6 +201,28 @@ h2 {
 @-webkit-keyframes rotate-scale-up-diag-1{0%{-webkit-transform:scale(1) rotate3d(1,1,0,0deg);transform:scale(1) rotate3d(1,1,0,0deg)}50%{-webkit-transform:scale(2) rotate3d(1,1,0,-180deg);transform:scale(2) rotate3d(1,1,0,-180deg)}100%{-webkit-transform:scale(1) rotate3d(1,1,0,-360deg);transform:scale(1) rotate3d(1,1,0,-360deg)}}@keyframes rotate-scale-up-diag-1{0%{-webkit-transform:scale(1) rotate3d(1,1,0,0deg);transform:scale(1) rotate3d(1,1,0,0deg)}50%{-webkit-transform:scale(2) rotate3d(1,1,0,-180deg);transform:scale(2) rotate3d(1,1,0,-180deg)}100%{-webkit-transform:scale(1) rotate3d(1,1,0,-360deg);transform:scale(1) rotate3d(1,1,0,-360deg)}}
 
 
+@media screen and (max-width: 2560px) {
+    .dropdown-section {
+        font-size: 1.6rem;
+    }
+
+    h2 {
+        font-size: 1.7rem;
+    }
+
+    .download-course-work-heading {
+        font-size: 3rem;
+    }
+}
+
+
+@media screen and (max-width: 1920px) {
+    .download-course-work-heading {
+        font-size: 2.5rem;
+    }
+}
+
+
 @media screen and (max-width: 1900px) {
     .dropdown-section {
         font-size: 1.2rem;
