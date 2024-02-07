@@ -103,6 +103,7 @@ footer a:hover {
     }
 }
 
+
 @media screen and (max-width: 1900px) {
     footer h1 {
         font-size: 1.4rem;
@@ -119,8 +120,10 @@ footer a:hover {
         line-height: 1.2rem;
         transition: 600ms ease-in-out;
         animation: float 4s ease-in-out infinite;
+        padding: 0.8rem;
     }
 }
+
 
 @media only screen and (max-width: 600px) {
     footer h1 {

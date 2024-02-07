@@ -183,19 +183,23 @@ h2 {
     font-size: 1.8em;
 }
   
+
 @keyframes typing {
     from {
       width: 0
     }
 }
       
+
 @keyframes blink {
     50% {
       border-color: transparent
     }
 }
 
+
 @-webkit-keyframes rotate-scale-up-diag-1{0%{-webkit-transform:scale(1) rotate3d(1,1,0,0deg);transform:scale(1) rotate3d(1,1,0,0deg)}50%{-webkit-transform:scale(2) rotate3d(1,1,0,-180deg);transform:scale(2) rotate3d(1,1,0,-180deg)}100%{-webkit-transform:scale(1) rotate3d(1,1,0,-360deg);transform:scale(1) rotate3d(1,1,0,-360deg)}}@keyframes rotate-scale-up-diag-1{0%{-webkit-transform:scale(1) rotate3d(1,1,0,0deg);transform:scale(1) rotate3d(1,1,0,0deg)}50%{-webkit-transform:scale(2) rotate3d(1,1,0,-180deg);transform:scale(2) rotate3d(1,1,0,-180deg)}100%{-webkit-transform:scale(1) rotate3d(1,1,0,-360deg);transform:scale(1) rotate3d(1,1,0,-360deg)}}
+
 
 @media screen and (max-width: 1900px) {
     .dropdown-section {
@@ -206,6 +210,7 @@ h2 {
         font-size: 1.7rem;
     }
 }
+
 
 @media screen and (max-width: 1200px) {
     .images {
@@ -258,4 +263,3 @@ h2 {
         font-size: 0.8rem;
     }
 }
-
