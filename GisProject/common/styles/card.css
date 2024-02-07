@@ -81,3 +81,62 @@ iframe {
 .fade-in-animation {
     animation: fadeIn 2.5s;
 }
+
+
+@media screen and (max-width: 1900px) {
+    .dropdown-section h5 {
+        font-size: 1.2rem;
+    }
+
+    #dropdown-i {
+        font-size: 1.2rem;
+    }
+
+    .fa-arrow-left, .fa-arrow-right {
+        font-size: 1.6rem;
+    }
+}
+
+
+@media screen and (max-width: 1200px) {
+    .card .images {
+        margin-top: 5vh;
+        height: 30vh;
+        width: 25vw;
+        margin-bottom: 0vh;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .card .images {
+        margin-top: 5vh;
+        height: 30vh;
+        width: 35vw;
+        margin-bottom: 0vh;
+    }
+
+    .fa-arrow-left {
+        position: absolute;
+        color: whitesmoke;
+        left: 12.5%;
+        font-size: 1.3rem;
+        cursor: pointer;
+    }
+    
+    .fa-arrow-right {
+        position: absolute;
+        color: whitesmoke;
+        left: 84.2%;
+        font-size: 1.3rem;
+        cursor: pointer;
+    }
+
+    .hidden p {
+        font-size: 0.8rem;
+    }
+
+    iframe {
+        width: 480px;
+        height: 300px;
+    }
+}

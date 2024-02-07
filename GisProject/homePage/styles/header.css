@@ -22,7 +22,7 @@ header h1 {
 
 header {
     background-image: url('../images/88364ac9-3daa-4eb6-a4ba-7d8ce843e15b.jpg');
-    width: 100vw;
+    /* width: 100vw; */
     height: 65vh;
     background-size: cover;
     animation-name: bgPositionAnim;
@@ -54,5 +54,17 @@ header {
     100% {
         letter-spacing: -0.5em;
         opacity: 0;
+    }
+}
+
+@media screen and (max-width: 1900px) {
+    header h1 {
+        font-size: 2.5rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    header h1 {
+        font-size: 2rem;
     }
 }

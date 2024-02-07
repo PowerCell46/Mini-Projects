@@ -196,3 +196,51 @@ h2 {
 }
 
 @-webkit-keyframes rotate-scale-up-diag-1{0%{-webkit-transform:scale(1) rotate3d(1,1,0,0deg);transform:scale(1) rotate3d(1,1,0,0deg)}50%{-webkit-transform:scale(2) rotate3d(1,1,0,-180deg);transform:scale(2) rotate3d(1,1,0,-180deg)}100%{-webkit-transform:scale(1) rotate3d(1,1,0,-360deg);transform:scale(1) rotate3d(1,1,0,-360deg)}}@keyframes rotate-scale-up-diag-1{0%{-webkit-transform:scale(1) rotate3d(1,1,0,0deg);transform:scale(1) rotate3d(1,1,0,0deg)}50%{-webkit-transform:scale(2) rotate3d(1,1,0,-180deg);transform:scale(2) rotate3d(1,1,0,-180deg)}100%{-webkit-transform:scale(1) rotate3d(1,1,0,-360deg);transform:scale(1) rotate3d(1,1,0,-360deg)}}
+
+@media screen and (max-width: 1900px) {
+    .dropdown-section {
+        font-size: 1.2rem;
+    }
+
+    h2 {
+        font-size: 1.7rem;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .images {
+        height: 35vh;
+        width: 28vw;
+        scale: .8; 
+        opacity: 0;
+        animation: fade-in linear forwards;
+        animation-timeline: view();
+        animation-range: entry; 
+        margin: 3vh 0;
+        border-radius: 0.4rem;
+        box-shadow: 1px 6px 16px 0px rgba(0,0,0,0.75);
+        transition: 600ms ease-in-out;
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+    h1 {
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+        margin-top: 7.5vh;
+    }
+
+    .images { 
+        height: 30vh;
+        width: 35vw;
+    }
+
+    .shown {
+        margin-left: 7.5vw;
+    }
+}
+
