@@ -190,7 +190,7 @@ nav p {
 
 #buttons-container-wrapper {
     width: 100vw;
-    height: 30vh;
+    height: 50vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -198,17 +198,27 @@ nav p {
 
 #buttons-container {
     width: 50vw;
-    height: 20vh;
+    height: 30vh;
     border-radius: var(--border-radius);
     box-shadow: var(--box-shadow);
     background-color: black;
+    overflow: hidden;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 2vw;
+    gap: 3vh;
 }
 
-#buttons-container button {
+.buttons-row {
+    border-radius: var(--border-radius);
+    /* background-color: white; */
+    padding: 1.25vh 2vw;
+    display: flex;
+    gap: 1vw;
+}
+
+#first-buttons-row button {
     cursor: pointer;
     border-radius: 10vw;
     padding: 1.2vh 1.2vw;
@@ -218,43 +228,75 @@ nav p {
     transition: all 600ms ease-in-out;
 }
 
-#buttons-container button:nth-child(1) {
+#first-buttons-row button:nth-child(1) {
     color: rgb(255, 53, 164);
     border: 0.2vw solid rgb(255, 53, 164);
 
 }
 
-#buttons-container button:nth-child(1):hover {
+#first-buttons-row button:nth-child(1):hover {
     color: whitesmoke;
     background-color: rgb(255, 53, 164);
     border: 0.2vw solid whitesmoke;
 }
 
 
-#buttons-container button:nth-child(2) {
+#first-buttons-row button:nth-child(2) {
     color: rgb(255, 181, 98);
     border: 0.2vw solid rgb(255, 181, 98);
 
 }
 
-#buttons-container button:nth-child(2):hover {
+#first-buttons-row button:nth-child(2):hover {
     color: whitesmoke;
     background-color: rgb(255, 181, 98);
     border: 0.2vw solid whitesmoke;
 }
 
 
-#buttons-container button:nth-child(3) {
+#first-buttons-row button:nth-child(3) {
     color: rgb(0, 220, 180);
-    ;
     border: 0.2vw solid rgb(0, 220, 180);
-    ;
-
 }
 
-#buttons-container button:nth-child(3):hover {
+#first-buttons-row button:nth-child(3):hover {
     color: whitesmoke;
     background-color: rgb(0, 220, 180);
-    ;
     border: 0.2vw solid whitesmoke;
+}
+
+#second-buttons-row button {
+    cursor: pointer;
+    border-radius: 0.2vw;
+    padding: 1.2vh 1.2vw;
+    font-weight: bold;
+    font-size: 0.9vw;
+    letter-spacing: 0.02vw;
+    transition: all 600ms ease-in-out;
+    border: none;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#second-buttons-row button:nth-child(1) {
+    background-color: #00d2b2;
+}
+
+#second-buttons-row button:nth-child(1):hover {
+    background-color: #00a88e;
+}
+
+#second-buttons-row button:nth-child(2) {
+    background-color: #007ab2;
+}
+
+#second-buttons-row button:nth-child(2):hover {
+    background-color: #00628e;
+}
+
+#second-buttons-row button:nth-child(3) {
+    background-color: #ff4e71;
+}
+
+#second-buttons-row button:nth-child(3):hover {
+    background-color: #cc3d5a;
 }
