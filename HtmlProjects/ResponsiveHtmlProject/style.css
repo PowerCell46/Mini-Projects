@@ -1,3 +1,11 @@
+/* ! Similar to other imports, the font import needs to be at the top so that the fonts are loaded before any styles that depend on them are applied */
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+
+/* ! @import rules must appear before any other type of rule in the stylesheet */
+/* ! prevents cascading conflict */
+
+
 /* ! --- Reset --- */
 @import url("./css/reset.css");
 
@@ -24,9 +32,6 @@
 
 /* ! --- Buttons Container --- */
 @import url("./css/footer.css");
-
-
-@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
 
 :root {
