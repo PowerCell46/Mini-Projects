@@ -1,0 +1,12 @@
+body {
+    background-color: var(--royal-blue-darkened);
+}
+
+html,
+body {
+    overflow-x: hidden;
+    min-height: 100vh;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+}
