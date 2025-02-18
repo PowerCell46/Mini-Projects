@@ -17,7 +17,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 0.3vw dashed black;
+    border: 0.25vw dashed black;
     display: flex;
     justify-content: space-around;
 }

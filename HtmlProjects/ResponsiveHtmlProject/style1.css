@@ -1,0 +1,33 @@
+.container {
+    width: 100vw;
+    height: 80vh;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container h1 {
+    color: blue;
+}
+.nav-wrapper {
+    width: 100vw;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1vw ;
+}
+
+nav {
+    padding: 1vw;
+    width: 20vw;
+    background-color: aquamarine;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav li {
+    
+}

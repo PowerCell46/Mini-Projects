@@ -21,7 +21,7 @@ footer {
 
 .inner-footer-container {
     height: 40vw;
-    width: 12.5vw;
+    width: 14vw;
     /* background-color: #00ad62; */
     display: flex;
     flex-direction: column;
@@ -69,4 +69,59 @@ footer {
     flex-direction: column;
     gap: 1vh;
     color: #dddddd;
+}
+
+.inner-footer-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+    align-items: center;
+    border-radius: 0.3rem;
+    /* background-color: #dddddd; */
+    padding: 4vh 3vw;
+    border: 0.05vw dashed whitesmoke;
+}
+
+
+.inner-footer-container form .input-field-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5vh;
+}
+
+.inner-footer-container form .input-field-wrapper p {
+    text-shadow: 3px 3px 2px rgba(0,0,0,0.6);
+}
+
+.inner-footer-container form .input-field-wrapper input {
+    border: none;
+    background-color: #e5eef4;
+    /* background-color: black; */
+    height: 3.75vh;
+    width: 7vw;
+    padding: 0 0.5vw;
+    border-radius: 0.1vw;
+    box-shadow: 2.5px 2.5px 5px 0px rgba(0,0,0,0.75);
+}
+
+.input-field-wrapper:nth-child(2) {
+    margin-bottom: 1vh;
+}
+
+.inner-footer-container form button {
+    cursor: pointer;
+    letter-spacing: 0.03vw;
+    align-self: flex-start;
+    padding: 1vh 1vw;
+    font-size: 1vw;
+    border: none;
+    border-radius: 0.1vw;
+    background-color: #f06a73;
+    font-family: var(--font-family);
+}
+
+::placeholder {
+    color: #878787;
+    font-family: var(--font-family);
+    opacity: 1; /* Firefox */
 }
