@@ -35,6 +35,8 @@ footer {
     /* line-height: var(--line-height); */
 }
 
+/* ! First footer element */
+
 .footer-container:nth-child(1) p {
     font-size: 1vw;
     color: #dddddd;
@@ -59,6 +61,8 @@ footer {
     font-weight: 600;
 }
 
+/* ! Second footer element */
+
 .footer-container:nth-child(2) p {
     color: #dddddd;
     line-height: var(--line-height);
@@ -75,6 +79,8 @@ footer {
 .footer-contact-options p:hover, .footer-container:nth-child(4) li:hover {
     text-decoration: underline;
 }
+
+/* ! Third footer element */
 
 .inner-footer-container form {
     display: flex;
@@ -139,6 +145,7 @@ footer {
     opacity: 1; /* Firefox */
 }
 
+/* ! Fourth footer element */
 
 .footer-explore-options {
     padding: 3vh 0;

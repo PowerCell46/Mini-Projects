@@ -31,7 +31,8 @@
 #first-buttons-row button {
     cursor: pointer;
     border-radius: 10vw;
-    padding: 1.2vh 1.2vw;
+    padding: 1vh 1vw;
+    font-size: 1vw;
     background-color: transparent;
     font-weight: bold;
     font-family: "Rubik", serif;
@@ -43,7 +44,6 @@
 #first-buttons-row button:nth-child(1) {
     color: rgb(255, 53, 164);
     border: 0.2vw solid rgb(255, 53, 164);
-
 }
 
 #first-buttons-row button:nth-child(1):hover {
